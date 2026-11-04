@@ -19,64 +19,37 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900 flex flex-col min-h-screen font-['Poppins',sans-serif]">
 
-    <!-- Top Announcement Ticker Bar (Govt Subsidy Alert) -->
-    <div class="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 text-white py-2 px-4 text-xs font-medium border-b border-amber-500/30 overflow-hidden relative z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
-            <div class="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase shrink-0 shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-slate-950 animate-ping"></span>
-                Official Notice
-            </div>
-            <div class="overflow-hidden flex-1 mx-2 sm:mx-4 relative whitespace-nowrap">
-                <div class="ticker-track flex items-center gap-12 text-slate-200">
-                    <span class="flex items-center gap-2">
-                        ⭐ <strong>Official Govt. Subsidy Approved Manufacturer:</strong> Machines eligible under <strong>Mukhyamantri Udyami Yojana</strong>, <strong>Laghu Udyami Yojana (₹2 Lakh Free Grant)</strong>, <strong>PMEGP</strong>, and <strong>PMFME</strong>.
-                    </span>
-                    <span class="flex items-center gap-2">
-                        📄 <strong>Instant Bank Quotation &amp; DPR Support:</strong> Contact our Patna desk at <strong>+91 7061973186</strong> / <strong>7858945066</strong>.
-                    </span>
-                    <span class="flex items-center gap-2">
-                        📍 <strong>Showroom &amp; Ready Stock:</strong> 2nd Floor, Opp. Aryabhata University, Mithapur Old Bus Stand Road, Patna-01, Bihar.
-                    </span>
-                    <span class="flex items-center gap-2">
-                        ⭐ <strong>Official Govt. Subsidy Approved Manufacturer:</strong> Machines eligible under <strong>Mukhyamantri Udyami Yojana</strong>, <strong>Laghu Udyami Yojana</strong>, <strong>PMEGP</strong>, and <strong>PMFME</strong>.
-                    </span>
-                </div>
-            </div>
-            <div class="hidden lg:flex items-center gap-3 text-xs shrink-0 text-slate-300">
-                <span class="bg-white/10 px-2.5 py-0.5 rounded text-[11px] font-medium border border-white/10 text-amber-300">GST: 10CJJPD5303B1Z7</span>
-                <span class="text-slate-400">•</span>
-                <span class="text-slate-300 text-[11px]">ISO 9001:2015</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Info Utility Header Bar -->
-    <div class="bg-slate-900 text-slate-300 py-2 px-4 text-xs border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-            <div class="flex flex-wrap items-center gap-3 sm:gap-6">
-                <a href="tel:+917061973186" class="flex items-center gap-1.5 hover:text-amber-400 transition-colors">
+    <!-- Single Unified Sleek Top Utility Bar -->
+    <div class="bg-slate-900 text-slate-300 py-1.5 px-4 text-xs border-b border-slate-800 relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <!-- Left: Contact Lines & Status -->
+            <div class="flex items-center gap-3 sm:gap-5 whitespace-nowrap">
+                <span class="inline-flex items-center gap-1.5 text-slate-300">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="hidden sm:inline text-slate-400">Patna Showroom:</span> <strong class="text-white font-medium">9 AM – 8 PM</strong>
+                </span>
+                <a href="tel:+917061973186" class="inline-flex items-center gap-1.5 text-slate-200 hover:text-amber-400 transition-colors font-medium">
                     <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
-                    <span class="font-medium">+91 7061973186</span>
+                    <span>+91 7061973186</span>
                 </a>
-                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors">
+                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors">
                     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                    <span>WhatsApp: +91 7858945066</span>
-                </a>
-                <a href="mailto:bharatagro02@gmail.com" class="hidden sm:flex items-center gap-1.5 hover:text-amber-400 transition-colors">
-                    <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                    <span>bharatagro02@gmail.com</span>
+                    <span>WhatsApp</span>
                 </a>
             </div>
 
-            <div class="flex items-center gap-4">
-                <span class="hidden md:inline text-slate-400">🕒 Mon - Sun: 9:00 AM - 8:00 PM</span>
-                <span class="hidden xl:inline text-slate-600">|</span>
-                <span class="hidden xl:inline text-slate-400">Patna Showroom &amp; Factory Depot</span>
-                <div class="flex items-center gap-1.5 pl-2 border-l border-slate-800">
+            <!-- Center Notice Badge (Desktop) -->
+            <div class="hidden lg:flex items-center gap-2 bg-slate-800/80 px-3 py-0.5 rounded-full border border-slate-700/80 text-[11px] text-amber-300">
+                <span>⭐ Bihar Udyami &amp; PMEGP Subsidy Approved Machines • Instant GST Quotation &amp; DPR</span>
+            </div>
+
+            <!-- Right: GSTIN & Socials -->
+            <div class="flex items-center gap-3 text-xs whitespace-nowrap">
+                <span class="text-slate-400 text-[11px] hidden sm:inline">GSTIN: <strong class="text-slate-200 font-mono">10CJJPD5303B1Z7</strong></span>
+                <span class="text-slate-700 hidden sm:inline">|</span>
+                <div class="flex items-center gap-1.5">
                     <a href="https://www.facebook.com/share/17rzyPre8P/" target="_blank" rel="noopener" class="w-6 h-6 rounded bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors text-white" title="Facebook">
                         <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.7 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
                     </a>
@@ -91,142 +64,124 @@
         </div>
     </div>
 
-    <!-- Main Navigation Bar with Mega-Menu & Dynamic Controls -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-[0_4px_25px_-5px_rgba(0,44,75,0.08)] border-b border-slate-200/90 transition-all duration-200">
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/90 transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Brand Identity -->
-                <a href="{{ route('home') }}" class="flex items-center gap-3.5 group shrink-0">
-                    <div class="p-1 rounded-xl bg-slate-50 border border-slate-200 shadow-sm group-hover:border-amber-400 group-hover:shadow transition-all">
-                        <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industry &amp; Machinery" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="block text-xl sm:text-2xl font-extrabold font-['Outfit',sans-serif] tracking-tight text-blue-950 leading-none">
-                                BHARAT AGRO
-                            </span>
-                            <span class="hidden md:inline-flex items-center gap-1 text-[9px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 tracking-wider uppercase">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Govt Approved
-                            </span>
-                        </div>
-                        <span class="block text-[10px] font-bold text-amber-600 tracking-widest uppercase mt-0.5">
-                            Industry &amp; Machinery • Patna
-                        </span>
-                    </div>
+            <div class="flex items-center justify-between h-20 gap-4">
+                <!-- Brand Official Logo (Clean & Authentic) -->
+                <a href="{{ route('home') }}" class="shrink-0 flex items-center group py-2" title="Bharat Agro Industries &amp; Machinery">
+                    <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-10 sm:h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]">
                 </a>
 
                 <!-- Desktop Navigation Menu -->
-                <nav class="hidden lg:flex items-center gap-1 font-medium text-slate-700 text-[14px] xl:text-[15px]">
+                <nav class="hidden lg:flex items-center gap-1 xl:gap-2 font-medium text-slate-700 text-[14px] xl:text-[15px] whitespace-nowrap">
                     <!-- Home -->
-                    <a href="{{ route('home') }}" class="px-3 py-2 rounded-lg transition-all {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
+                    <a href="{{ route('home') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Home
                     </a>
 
-                    <!-- Machinery Catalog (Mega-Menu Trigger) -->
+                    <!-- Products Catalog with Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('products') }}" class="px-3.5 py-2 rounded-lg flex items-center gap-1.5 transition-all {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
-                            <span>Machinery Catalog</span>
-                            <span class="text-[10px] font-semibold bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded">27+</span>
-                            <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a href="{{ route('products') }}" class="px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                            <span>Products</span>
+                            <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded-full">27+</span>
+                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </a>
 
-                        <!-- Mega Menu Dropdown -->
-                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50 w-[780px] xl:w-[860px]">
-                            <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-6 overflow-hidden nav-dropdown">
-                                <div class="grid grid-cols-12 gap-6">
-                                    <!-- Column 1: Food Processing & Agro -->
-                                    <div class="col-span-4 space-y-3">
+                        <!-- Products Mega Menu Dropdown -->
+                        <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50 w-[680px]">
+                            <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-5 nav-dropdown">
+                                <div class="grid grid-cols-12 gap-5">
+                                    <!-- Column 1: Food & Agro Mills -->
+                                    <div class="col-span-4 space-y-2.5">
                                         <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
-                                            <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center text-sm font-bold">🌾</span>
+                                            <span class="w-6 h-6 rounded-md bg-blue-50 text-blue-900 flex items-center justify-center text-xs font-bold">🌾</span>
                                             <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Food &amp; Agro Mills</h4>
                                         </div>
-                                        <ul class="space-y-1.5 text-xs text-slate-600">
+                                        <ul class="space-y-1 text-xs text-slate-600">
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
                                                     <span class="font-semibold text-slate-800 block">Commercial Aata Chakki</span>
-                                                    <span class="text-[11px] text-slate-500">50 to 500 Kg/Hr Heavy-Duty</span>
+                                                    <span class="text-[11px] text-slate-500">50 to 500 Kg/Hr Flour Mill</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
                                                     <span class="font-semibold text-slate-800 block">Cyclone Aata Pulverizer</span>
-                                                    <span class="text-[11px] text-slate-500">Dust-Free Fine Flour Grinding</span>
+                                                    <span class="text-[11px] text-slate-500">Dust-Free Fine Grinding</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
                                                     <span class="font-semibold text-slate-800 block">Cold Press Oil Expeller</span>
-                                                    <span class="text-[11px] text-slate-500">Mustard, Sesame, Groundnut</span>
+                                                    <span class="text-[11px] text-slate-500">Mustard &amp; Seed Oil Press</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Commercial Spice &amp; Masala Mill</span>
-                                                    <span class="text-[11px] text-slate-500">Turmeric, Chili, Coriander Grinder</span>
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
+                                                    <span class="font-semibold text-slate-800 block">Spice &amp; Masala Mill</span>
+                                                    <span class="text-[11px] text-slate-500">Commercial Turmeric/Chili</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
 
-                                    <!-- Column 2: Small Scale & Packaging -->
-                                    <div class="col-span-4 space-y-3">
+                                    <!-- Column 2: Small Scale & Manufacturing -->
+                                    <div class="col-span-4 space-y-2.5">
                                         <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
-                                            <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-800 flex items-center justify-center text-sm font-bold">⚙️</span>
-                                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Small Industry &amp; Feed</h4>
+                                            <span class="w-6 h-6 rounded-md bg-amber-50 text-amber-800 flex items-center justify-center text-xs font-bold">⚙️</span>
+                                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Small Industry</h4>
                                         </div>
-                                        <ul class="space-y-1.5 text-xs text-slate-600">
+                                        <ul class="space-y-1 text-xs text-slate-600">
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Paper Cup Making Machine</span>
-                                                    <span class="text-[11px] text-slate-500">High Speed Automatic 70-85 pcs/min</span>
+                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
+                                                    <span class="font-semibold text-slate-800 block">Paper Cup Machine</span>
+                                                    <span class="text-[11px] text-slate-500">High Speed Automatic Plant</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Automatic Agarbatti Plant</span>
+                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
+                                                    <span class="font-semibold text-slate-800 block">Agarbatti Plant</span>
                                                     <span class="text-[11px] text-slate-500">Incense Stick Manufacturing</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Cattle &amp; Fish Feed Pellets</span>
-                                                    <span class="text-[11px] text-slate-500">Floating Pellet &amp; Feed Extruder</span>
+                                                <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
+                                                    <span class="font-semibold text-slate-800 block">Cattle &amp; Fish Feed</span>
+                                                    <span class="text-[11px] text-slate-500">Pellet &amp; Extruder Plant</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'packaging']) }}" class="block px-2.5 py-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
+                                                <a href="{{ route('products', ['category' => 'packaging']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
                                                     <span class="font-semibold text-slate-800 block">Continuous Band Sealer</span>
-                                                    <span class="text-[11px] text-slate-500">Industrial Nitrogen &amp; Pouch Packing</span>
+                                                    <span class="text-[11px] text-slate-500">Pouch Packaging Units</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
 
-                                    <!-- Column 3: Featured Subsidy Showcase Card -->
+                                    <!-- Column 3: Featured Subsidy Spotlight Card -->
                                     <div class="col-span-4 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 rounded-xl p-4 text-white flex flex-col justify-between shadow-inner border border-blue-800/40">
                                         <div>
-                                            <div class="flex items-center justify-between mb-2">
-                                                <span class="bg-amber-400 text-slate-950 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded tracking-wider">
-                                                    Subsidy Ready
-                                                </span>
-                                                <span class="text-[11px] text-blue-200">Patna Showroom</span>
-                                            </div>
-                                            <h5 class="text-sm font-bold text-white mb-1.5">
-                                                Laghu Udyami &amp; Udyami Yojana Packages
+                                            <span class="inline-block bg-amber-400 text-slate-950 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded tracking-wider mb-2">
+                                                Subsidy Ready
+                                            </span>
+                                            <h5 class="text-xs font-bold text-white mb-1 leading-snug">
+                                                ₹2L Free Grant &amp; ₹10L Udyami Packages
                                             </h5>
                                             <p class="text-[11px] text-slate-300 leading-relaxed mb-3">
-                                                Avail ₹2 Lakh Free Grant or ₹10 Lakh project machines with official GST quotations &amp; bank DPR.
+                                                Official GST quotation, technical sheets, and bank DPR assistance.
                                             </p>
                                         </div>
 
-                                        <div class="pt-3 border-t border-white/10 space-y-2">
+                                        <div class="pt-2 border-t border-white/10 space-y-1.5">
                                             <a href="{{ route('products') }}" class="w-full flex items-center justify-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs py-2 rounded-lg transition-colors shadow">
                                                 <span>View All 27+ Machines</span>
                                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                                             </a>
-                                            <span class="block text-center text-[10px] text-amber-200/80">⚡ Ready Stock for Instant Delivery</span>
+                                            <span class="block text-center text-[10px] text-amber-200/80">⚡ Patna Ready Stock Available</span>
                                         </div>
                                     </div>
                                 </div>
@@ -234,21 +189,21 @@
                         </div>
                     </div>
 
-                    <!-- Government Schemes (Dropdown) -->
+                    <!-- Government Schemes Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('schemes') }}" class="px-3.5 py-2 rounded-lg flex items-center gap-1.5 transition-all {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
-                            <span>Government Schemes</span>
-                            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.2 rounded uppercase tracking-wider">Subsidy</span>
-                            <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a href="{{ route('schemes') }}" class="px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                            <span>Govt Schemes</span>
+                            <span class="text-[9px] font-extrabold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-full uppercase tracking-wider">Subsidy</span>
+                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </a>
 
-                        <!-- Schemes Dropdown -->
+                        <!-- Schemes Dropdown Menu -->
                         <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50 w-80">
-                            <div class="bg-white rounded-xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-3 nav-dropdown">
+                            <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-3 nav-dropdown">
                                 <div class="px-3 py-2 border-b border-slate-100 mb-1">
-                                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Official State &amp; Central Schemes</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Eligible Schemes</span>
                                     <span class="text-xs font-semibold text-slate-800">Approved Machinery Quotations</span>
                                 </div>
                                 <ul class="space-y-1 text-xs">
@@ -284,7 +239,7 @@
                                             <span class="w-6 h-6 rounded bg-orange-100 text-orange-900 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">Agro</span>
                                             <div>
                                                 <span class="font-semibold text-slate-900 block">PMFME Food Processing</span>
-                                                <span class="text-[11px] text-slate-500">35% Credit-Linked Capital Subsidy</span>
+                                                <span class="text-[11px] text-slate-500">35% Credit-Linked Subsidy</span>
                                             </div>
                                         </a>
                                     </li>
@@ -300,49 +255,44 @@
                     </div>
 
                     <!-- Services -->
-                    <a href="{{ route('services') }}" class="px-3 py-2 rounded-lg transition-all {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
+                    <a href="{{ route('services') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Services &amp; Warranty
                     </a>
 
                     <!-- About Us -->
-                    <a href="{{ route('about') }}" class="px-3 py-2 rounded-lg transition-all {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
+                    <a href="{{ route('about') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         About Us
                     </a>
 
                     <!-- Contact -->
-                    <a href="{{ route('contact') }}" class="px-3 py-2 rounded-lg transition-all {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80 shadow-xs' : 'hover:text-blue-900 hover:bg-slate-100/80' }}">
+                    <a href="{{ route('contact') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Contact
                     </a>
                 </nav>
 
-                <!-- CTA Button & Actions -->
-                <div class="flex items-center gap-2 sm:gap-3">
-                    <!-- Quick Call Pill (Desktop) -->
-                    <a href="tel:+917061973186" class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50/80 hover:bg-blue-50 hover:border-blue-200 transition-colors text-slate-800 group">
-                        <div class="w-7 h-7 rounded-lg bg-blue-900 text-white flex items-center justify-center group-hover:bg-blue-800 transition-colors">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- CTA Actions -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <!-- Direct Helpline Link (for Wide Displays) -->
+                    <a href="tel:+917061973186" class="hidden 2xl:inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-blue-900 transition-colors px-3.5 py-2 rounded-full bg-slate-50 border border-slate-200 hover:border-blue-200 whitespace-nowrap">
+                        <div class="w-5 h-5 rounded-full bg-blue-900 text-white flex items-center justify-center text-[10px]">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
                         </div>
-                        <div class="text-left leading-tight">
-                            <span class="block text-[10px] text-slate-500 font-medium">Sales Hotline</span>
-                            <span class="block text-xs font-bold text-slate-900">+91 7061973186</span>
-                        </div>
+                        <span>+91 7061973186</span>
                     </a>
 
-                    <!-- Primary "Get Quotation" CTA Button -->
-                    <button type="button" class="open-quote-modal relative overflow-hidden inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all text-xs sm:text-sm active:scale-95 group">
-                        <!-- Shimmer Light -->
+                    <!-- Primary Get Quotation CTA Button -->
+                    <button type="button" class="open-quote-modal relative overflow-hidden inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
                         <span class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 animate-shimmer pointer-events-none"></span>
-                        
                         <svg class="w-4 h-4 text-slate-950 group-hover:rotate-12 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
-                        <span class="tracking-tight">Get Quotation</span>
+                        <span>Get Quotation</span>
                     </button>
 
                     <!-- Mobile Menu Hamburger Button -->
-                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-slate-700 hover:text-blue-900 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200" aria-label="Toggle Navigation">
+                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-slate-700 hover:text-blue-900 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200" aria-label="Toggle Navigation">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
                         </svg>
@@ -355,7 +305,7 @@
         </div>
 
         <!-- Mobile Navigation Menu Drawer -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-lg shadow-2xl px-4 pt-3 pb-6 space-y-2 max-h-[85vh] overflow-y-auto">
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white shadow-2xl px-4 pt-3 pb-6 space-y-2 max-h-[85vh] overflow-y-auto">
             <!-- Mobile Quick Actions: Call & WhatsApp -->
             <div class="grid grid-cols-2 gap-2 pt-1 pb-3 border-b border-slate-100">
                 <a href="tel:+917061973186" class="flex items-center justify-center gap-1.5 bg-blue-900 hover:bg-blue-800 text-white font-semibold py-2 px-3 rounded-lg text-xs transition-colors shadow-xs">
