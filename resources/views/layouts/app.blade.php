@@ -41,8 +41,8 @@
                 </a>
             </div>
 
-            <!-- Center Notice Badge (Desktop) -->
-            <div class="hidden lg:flex items-center gap-2 bg-slate-800/80 px-3 py-0.5 rounded-full border border-slate-700/80 text-[11px] text-amber-300">
+            <!-- Center Notice Badge (Visible on XL+ screens to prevent navbar squeeze) -->
+            <div class="hidden xl:flex items-center gap-2 bg-slate-800/80 px-3 py-0.5 rounded-full border border-slate-700/80 text-[11px] text-amber-300">
                 <span>⭐ Bihar Udyami &amp; PMEGP Subsidy Approved Machines • Instant GST Quotation &amp; DPR</span>
             </div>
 
@@ -77,16 +77,16 @@
                     <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-none object-contain transition-transform group-hover:scale-[1.02]">
                 </a>
 
-                <!-- Desktop Navigation Menu -->
-                <nav class="hidden lg:flex items-center gap-1 xl:gap-2 font-medium text-slate-700 text-[14px] xl:text-[15px] whitespace-nowrap">
+                <!-- Desktop Navigation Menu (Crisp & Perfectly Spaced for XL+ Screens) -->
+                <nav class="hidden xl:flex items-center gap-1 2xl:gap-2 font-medium text-slate-700 text-[13px] 2xl:text-[14px] whitespace-nowrap">
                     <!-- Home -->
-                    <a href="{{ route('home') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('home') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Home
                     </a>
 
                     <!-- Products Catalog with Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('products') }}" class="px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                        <a href="{{ route('products') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                             <span>Products</span>
                             <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded-full">27+</span>
                             <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,7 +206,7 @@
 
                     <!-- Government Schemes Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('schemes') }}" class="px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                        <a href="{{ route('schemes') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                             <span>Govt Schemes</span>
                             <span class="text-[9px] font-extrabold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-full uppercase tracking-wider">Subsidy</span>
                             <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,33 +270,23 @@
                     </div>
 
                     <!-- Services -->
-                    <a href="{{ route('services') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('services') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Services &amp; Warranty
                     </a>
 
                     <!-- About Us -->
-                    <a href="{{ route('about') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('about') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         About Us
                     </a>
 
                     <!-- Contact -->
-                    <a href="{{ route('contact') }}" class="px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('contact') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Contact
                     </a>
                 </nav>
 
                 <!-- CTA Actions -->
-                <div class="flex items-center gap-3 shrink-0">
-                    <!-- Direct Helpline Link (for Wide Displays) -->
-                    <a href="tel:+917061973186" class="hidden 2xl:inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-blue-900 transition-colors px-3.5 py-2 rounded-full bg-slate-50 border border-slate-200 hover:border-blue-200 whitespace-nowrap">
-                        <div class="w-5 h-5 rounded-full bg-blue-900 text-white flex items-center justify-center text-[10px]">
-                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                        </div>
-                        <span>+91 7061973186</span>
-                    </a>
-
+                <div class="flex items-center gap-2 sm:gap-3 shrink-0">
                     <!-- Mobile Call Quick Action (Visible only on < sm) -->
                     <a href="tel:+917061973186" class="sm:hidden p-2 text-blue-900 bg-blue-50/80 hover:bg-blue-100 rounded-xl border border-blue-200/80 transition-colors" title="Call Sales Directly">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,8 +294,8 @@
                         </svg>
                     </a>
 
-                    <!-- Primary Get Quotation CTA Button (Hidden on < sm to keep mobile header clean) -->
-                    <button type="button" class="open-quote-modal hidden sm:inline-flex relative overflow-hidden items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
+                    <!-- Primary Get Quotation CTA Button -->
+                    <button type="button" class="open-quote-modal hidden sm:inline-flex relative overflow-hidden items-center gap-1.5 sm:gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
                         <span class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 animate-shimmer pointer-events-none"></span>
                         <svg class="w-4 h-4 text-slate-950 group-hover:rotate-12 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -313,8 +303,8 @@
                         <span>Get Quotation</span>
                     </button>
 
-                    <!-- Mobile Menu Hamburger Button -->
-                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 text-slate-800 hover:text-blue-900 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 active:scale-95" aria-label="Toggle Navigation" aria-expanded="false">
+                    <!-- Mobile Menu Hamburger Button (Active on < XL) -->
+                    <button id="mobile-menu-btn" type="button" class="xl:hidden p-2.5 text-slate-800 hover:text-blue-900 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 active:scale-95" aria-label="Toggle Navigation" aria-expanded="false">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
                         </svg>
@@ -326,11 +316,11 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu Backdrop -->
-        <div id="mobile-menu-backdrop" class="fixed inset-0 top-16 sm:top-20 bg-slate-950/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300 opacity-0 lg:hidden"></div>
+        <!-- Mobile Navigation Menu Backdrop (Active on < XL) -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 top-16 sm:top-20 bg-slate-950/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300 opacity-0 xl:hidden"></div>
 
-        <!-- Mobile Navigation Menu Drawer (Slide-Down Overlay) -->
-        <div id="mobile-menu" class="fixed top-16 sm:top-20 left-0 right-0 w-full max-h-[calc(100dvh-4rem)] sm:max-h-[calc(100dvh-5rem)] overflow-y-auto bg-white border-b border-slate-200 shadow-2xl z-50 transform -translate-y-4 opacity-0 pointer-events-none transition-all duration-300 ease-out lg:hidden px-4 pt-3 pb-8 space-y-2">
+        <!-- Mobile Navigation Menu Drawer (Slide-Down Overlay, Active on < XL) -->
+        <div id="mobile-menu" class="fixed top-16 sm:top-20 left-0 right-0 w-full max-h-[calc(100dvh-4rem)] sm:max-h-[calc(100dvh-5rem)] overflow-y-auto bg-white border-b border-slate-200 shadow-2xl z-50 transform -translate-y-4 opacity-0 pointer-events-none transition-all duration-300 ease-out xl:hidden px-4 pt-3 pb-8 space-y-2">
             <!-- Mobile Quick Actions: Direct Call & WhatsApp -->
             <div class="grid grid-cols-2 gap-2 pt-1 pb-3 border-b border-slate-100">
                 <a href="tel:+917061973186" class="flex items-center justify-center gap-1.5 bg-blue-900 hover:bg-blue-800 active:scale-95 text-white font-semibold py-2.5 px-3 rounded-xl text-xs transition-all shadow-xs">

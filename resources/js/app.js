@@ -309,9 +309,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close mobile menu if resized to desktop viewport
+    // Close mobile menu if resized to desktop viewport (>= 1280px)
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024 && isMobileMenuOpen) {
+        if (window.innerWidth >= 1280 && isMobileMenuOpen) {
             closeMobileMenu();
         }
     });
