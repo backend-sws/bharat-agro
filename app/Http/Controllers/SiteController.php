@@ -179,3 +179,4 @@ class SiteController extends Controller
         return back()->with('success', 'धन्यवाद! आपकी पूछताछ (Inquiry) सफलतापूर्वक प्राप्त हो गई है। हमारी टीम जल्द ही आपसे 7061973186 से संपर्क करेगी।');
     }
 }
+
