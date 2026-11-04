@@ -91,98 +91,109 @@
                         </a>
 
                         <!-- Products Mega Menu Dropdown -->
-                        <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50 w-[680px]">
-                            <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-5 nav-dropdown">
-                                <div class="grid grid-cols-12 gap-5">
-                                    <!-- Column 1: Food & Agro Mills -->
-                                    <div class="col-span-4 space-y-2.5">
-                                        <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
-                                            <span class="w-6 h-6 rounded-md bg-blue-50 text-blue-900 flex items-center justify-center text-xs font-bold">🌾</span>
-                                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Food &amp; Agro Mills</h4>
+                        <div class="absolute left-0 top-full pt-2.5 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-50 w-[540px] max-w-[calc(100vw-24px)]">
+                            <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-slate-900/10 border border-slate-100 p-4 sm:p-5 nav-dropdown">
+                                <!-- Top Micro Header -->
+                                <div class="flex items-center justify-between pb-2.5 mb-3 border-b border-slate-100">
+                                    <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">
+                                        Commercial Machinery Categories
+                                    </span>
+                                    <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+                                        27+ Models in Ready Stock
+                                    </span>
+                                </div>
+
+                                <!-- 2-Column Product Categories -->
+                                <div class="grid grid-cols-2 gap-4">
+                                    <!-- Column 1: Food & Agro Processing -->
+                                    <div class="space-y-1">
+                                        <div class="flex items-center gap-1.5 pb-1.5 text-xs font-bold uppercase tracking-wider text-slate-900">
+                                            <span class="w-5 h-5 rounded bg-blue-50 text-blue-900 flex items-center justify-center text-xs">🌾</span>
+                                            <span>Food &amp; Agro Mills</span>
                                         </div>
-                                        <ul class="space-y-1 text-xs text-slate-600">
+                                        <ul class="space-y-1 text-xs">
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Commercial Aata Chakki</span>
-                                                    <span class="text-[11px] text-slate-500">50 to 500 Kg/Hr Flour Mill</span>
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-blue-900 block leading-snug">Commercial Aata Chakki</span>
+                                                    <span class="text-[11px] text-slate-500">50 to 500 Kg/Hr Heavy-Duty</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Cyclone Aata Pulverizer</span>
-                                                    <span class="text-[11px] text-slate-500">Dust-Free Fine Grinding</span>
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-blue-900 block leading-snug">Cyclone Aata Pulverizer</span>
+                                                    <span class="text-[11px] text-slate-500">Dust-Free Fine Flour Grinding</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Cold Press Oil Expeller</span>
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-blue-900 block leading-snug">Cold Press Oil Expeller</span>
                                                     <span class="text-[11px] text-slate-500">Mustard &amp; Seed Oil Press</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 hover:text-blue-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Spice &amp; Masala Mill</span>
+                                                <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block p-1.5 rounded-lg hover:bg-blue-50 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-blue-900 block leading-snug">Spice &amp; Masala Mill</span>
                                                     <span class="text-[11px] text-slate-500">Commercial Turmeric/Chili</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
 
-                                    <!-- Column 2: Small Scale & Manufacturing -->
-                                    <div class="col-span-4 space-y-2.5">
-                                        <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
-                                            <span class="w-6 h-6 rounded-md bg-amber-50 text-amber-800 flex items-center justify-center text-xs font-bold">⚙️</span>
-                                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Small Industry</h4>
+                                    <!-- Column 2: Small Scale & Disposables -->
+                                    <div class="space-y-1">
+                                        <div class="flex items-center gap-1.5 pb-1.5 text-xs font-bold uppercase tracking-wider text-slate-900">
+                                            <span class="w-5 h-5 rounded bg-amber-50 text-amber-800 flex items-center justify-center text-xs">⚙️</span>
+                                            <span>Small Scale &amp; Feed</span>
                                         </div>
-                                        <ul class="space-y-1 text-xs text-slate-600">
+                                        <ul class="space-y-1 text-xs">
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Paper Cup Machine</span>
-                                                    <span class="text-[11px] text-slate-500">High Speed Automatic Plant</span>
+                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-amber-900 block leading-snug">Paper Cup Machine</span>
+                                                    <span class="text-[11px] text-slate-500">High Speed 70-85 pcs/min</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Agarbatti Plant</span>
+                                                <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-amber-900 block leading-snug">Agarbatti Plant</span>
                                                     <span class="text-[11px] text-slate-500">Incense Stick Manufacturing</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Cattle &amp; Fish Feed</span>
+                                                <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-amber-900 block leading-snug">Cattle &amp; Fish Feed</span>
                                                     <span class="text-[11px] text-slate-500">Pellet &amp; Extruder Plant</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('products', ['category' => 'packaging']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 hover:text-amber-950 transition-colors">
-                                                    <span class="font-semibold text-slate-800 block">Continuous Band Sealer</span>
-                                                    <span class="text-[11px] text-slate-500">Pouch Packaging Units</span>
+                                                <a href="{{ route('products', ['category' => 'packaging']) }}" class="block p-1.5 rounded-lg hover:bg-amber-50/70 transition-colors group/item">
+                                                    <span class="font-bold text-slate-800 group-hover/item:text-amber-900 block leading-snug">Band Sealer &amp; Packers</span>
+                                                    <span class="text-[11px] text-slate-500">Nitrogen &amp; Pouch Packing</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
+                                </div>
 
-                                    <!-- Column 3: Featured Subsidy Spotlight Card -->
-                                    <div class="col-span-4 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 rounded-xl p-4 text-white flex flex-col justify-between shadow-inner border border-blue-800/40">
-                                        <div>
-                                            <span class="inline-block bg-amber-400 text-slate-950 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded tracking-wider mb-2">
-                                                Subsidy Ready
-                                            </span>
-                                            <h5 class="text-xs font-bold text-white mb-1 leading-snug">
-                                                ₹2L Free Grant &amp; ₹10L Udyami Packages
-                                            </h5>
-                                            <p class="text-[11px] text-slate-300 leading-relaxed mb-3">
-                                                Official GST quotation, technical sheets, and bank DPR assistance.
+                                <!-- Bottom Full-Width Subsidy Showcase Card -->
+                                <div class="mt-4 pt-3 border-t border-slate-100">
+                                    <div class="bg-gradient-to-r from-blue-950 via-slate-900 to-blue-900 rounded-xl p-3 text-white flex items-center justify-between gap-3 shadow-inner border border-blue-800/40">
+                                        <div class="space-y-0.5 min-w-0">
+                                            <div class="flex items-center gap-1.5">
+                                                <span class="bg-amber-400 text-slate-950 text-[9px] font-extrabold uppercase px-1.5 py-0.2 rounded tracking-wider shrink-0">
+                                                    Subsidy Ready
+                                                </span>
+                                                <span class="text-xs font-bold text-white truncate">
+                                                    ₹2L Free Grant &amp; ₹10L Udyami Packages
+                                                </span>
+                                            </div>
+                                            <p class="text-[11px] text-slate-300 truncate">
+                                                GST quotation, specs sheet &amp; bank DPR ready in 30 mins.
                                             </p>
                                         </div>
-
-                                        <div class="pt-2 border-t border-white/10 space-y-1.5">
-                                            <a href="{{ route('products') }}" class="w-full flex items-center justify-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs py-2 rounded-lg transition-colors shadow">
-                                                <span>View All 27+ Machines</span>
-                                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                            </a>
-                                            <span class="block text-center text-[10px] text-amber-200/80">⚡ Patna Ready Stock Available</span>
-                                        </div>
+                                        <a href="{{ route('products') }}" class="inline-flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap shadow shrink-0">
+                                            <span>All 27+ Machines</span>
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
