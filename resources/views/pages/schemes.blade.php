@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'सरकारी योजनाएं एवं सब्सिडी विवरण | Bharat Agro Machinery Patna')
-@section('meta_description', 'मुख्यमंत्री उद्यमी योजना, लघु उद्यमी योजना (₹2 लाख), PMEGP और PMFME के अंतर्गत मशीनरी कोटेशन, पात्रता और आवेदन प्रक्रिया की संपूर्ण जानकारी।')
+@section('title', 'Government Schemes & Subsidy Guide | Bharat Agro Machinery Patna')
+@section('meta_description', 'Complete guide on Mukhyamantri Udyami Yojana, Laghu Udyami Yojana (₹2 Lakhs Free Grant), PMEGP, and PMFME machinery quotations, eligibility, and application procedures.')
 
 @section('content')
 
@@ -12,10 +12,10 @@
             GOVERNMENT SUBSIDY SCHEMES GUIDE
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit']">
-            सरकारी योजनाएं एवं सब्सिडी मार्गदर्शन
+            Government Schemes &amp; Subsidies Guide
         </h1>
         <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
-            बिहार एवं केंद्र सरकार की योजनाओं के अंतर्गत मशीनरी खरीद पर 35% से 100% तक वित्तीय अनुदान प्राप्त करें
+            Avail 35% to 100% financial assistance and subsidies on machinery purchases under state and central government programs
         </p>
     </div>
 </div>
@@ -28,49 +28,49 @@
             <div class="lg:col-span-8 space-y-4">
                 <div class="flex items-center gap-3">
                     <span class="bg-blue-100 text-blue-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase">
-                        बिहार सरकार • उद्योग विभाग
+                        Govt. of Bihar • Dept. of Industries
                     </span>
                     <span class="text-xs font-bold text-amber-600 bg-amber-100 px-3 py-1 rounded-full">
-                        ₹10 लाख तक सहायता
+                        Up to ₹10 Lakhs Assistance
                     </span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
-                    1. मुख्यमंत्री उद्यमी योजना (बिहार)
+                    1. Mukhyamantri Udyami Yojana (Bihar)
                 </h2>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    यह बिहार सरकार की सबसे महत्वाकांक्षी योजना है जिसमें अनुसूचित जाति (SC), अनुसूचित जनजाति (ST), अत्यंत पिछड़ा वर्ग (EBC), महिला, तथा युवा उद्यमियों को नया उद्योग लगाने हेतु <strong>₹10 लाख की वित्तीय सहायता</strong> दी जाती है।
+                    The flagship enterprise promotion scheme of the Government of Bihar providing <strong>₹10 Lakhs in financial assistance</strong> to Scheduled Castes (SC), Scheduled Tribes (ST), Extremely Backward Classes (EBC), Women, and Youth entrepreneurs to establish new manufacturing businesses.
                 </p>
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs sm:text-sm space-y-2">
                     <div class="flex items-center gap-2 text-slate-800">
-                        <span class="font-bold text-emerald-600">✓ ₹5 लाख अनुदान (सब्सिडी):</span>
-                        <span>यह राशि सरकार द्वारा सीधे माफ कर दी जाती है (लौटानी नहीं होती)।</span>
+                        <span class="font-bold text-emerald-600">✓ ₹5 Lakhs Government Grant (Subsidy):</span>
+                        <span>Outright subsidy provided directly by the government (zero repayment required).</span>
                     </div>
                     <div class="flex items-center gap-2 text-slate-800">
-                        <span class="font-bold text-blue-900">✓ ₹5 लाख ब्याजमुक्त ऋण:</span>
-                        <span>महिलाओं, SC/ST और EBC के लिए पूर्णत: ब्याजमुक्त (युवाओं के लिए मात्र 1% ब्याज), जिसे 84 आसान मासिक किस्तों में लौटाना होता है।</span>
+                        <span class="font-bold text-blue-900">✓ ₹5 Lakhs Concessional Loan:</span>
+                        <span>100% interest-free for women, SC/ST, and EBC beneficiaries (1% simple interest for general youth), repayable in 84 easy monthly installments.</span>
                     </div>
                 </div>
                 <div class="pt-2">
-                    <span class="text-xs font-bold text-slate-800 block mb-1.5">पात्र प्रमुख मशीनें:</span>
+                    <span class="text-xs font-bold text-slate-800 block mb-1.5">Approved Key Machinery:</span>
                     <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">कमर्शियल आटा चक्की प्लांट</span>
-                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">दाल मिल मशीन</span>
-                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">मसाला पल्वलाइजर</span>
-                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">पेपर कप व प्लेट प्लांट</span>
-                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">नेल मेकिंग व वायर मशीन</span>
+                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">Commercial Flour Mill Plants</span>
+                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">Pulse (Dal) Mill Plants</span>
+                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">Spice Pulverizers</span>
+                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">Paper Cup &amp; Napkin Machines</span>
+                        <span class="bg-blue-50 text-blue-900 px-2.5 py-1 rounded-md border border-blue-200 font-medium">Wire Nail Making Plants</span>
                     </div>
                 </div>
             </div>
             <div class="lg:col-span-4 bg-slate-900 text-white p-6 rounded-2xl text-center space-y-4">
-                <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block">कोटेशन हेतु संपर्क करें</span>
+                <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block">Get Quotation</span>
                 <p class="text-xs text-slate-300">
-                    उद्योग विभाग पोर्टल पर अपलोड करने योग्य जीएसटी इनवॉइस एवं आधिकारिक कोटेशन प्राप्त करें।
+                    Receive verified GST invoices and official machinery quotation accepted by the Department of Industries portal.
                 </p>
-                <button type="button" class="open-quote-modal w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition" data-machine="मुख्यमंत्री उद्यमी योजना मशीनरी">
-                    कोटेशन बनवाएं (Get Quote)
+                <button type="button" class="open-quote-modal w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition" data-machine="Mukhyamantri Udyami Yojana Machinery">
+                    Request Official Quotation
                 </button>
                 <a href="tel:+917061973186" class="block text-xs text-amber-300 hover:underline">
-                    फोन पर समझें: +91 7061973186
+                    Phone Consultation: +91 7061973186
                 </a>
             </div>
         </div>
@@ -80,53 +80,53 @@
             <div class="lg:col-span-8 space-y-4">
                 <div class="flex items-center gap-3">
                     <span class="bg-amber-100 text-amber-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase">
-                        100% फ्री ग्रांट
+                        100% Free Grant
                     </span>
                     <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">
-                        ₹2 लाख अनुदान राशि
+                        ₹2 Lakhs Non-Repayable Aid
                     </span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
-                    2. मुख्यमंत्री लघु उद्यमी योजना (बिहार)
+                    2. Mukhyamantri Laghu Udyami Yojana (Bihar)
                 </h2>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    बिहार के आर्थिक रूप से कमजोर एवं गरीब परिवारों के लिए यह योजना वरदान साबित हुई है। इसमें चयनित लाभार्थियों को अपना खुद का छोटा रोजगार या वर्कशॉप शुरू करने के लिए <strong>₹2,00,000 की राशि पूर्णत: नि:शुल्क (बिना ऋण)</strong> तीन किस्तों में बैंक खाते में भेजी जाती है।
+                    Designed specifically for economically weaker families in Bihar. Beneficiaries receive a total of <strong>₹2,00,000 as a 100% free government grant</strong> (no bank loan, zero interest, zero repayment) disbursed across three progressive stages directly into their bank accounts.
                 </p>
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs sm:text-sm space-y-2">
                     <div class="flex items-center gap-2 text-slate-800">
-                        <span class="font-bold text-amber-600">✓ 1st किस्त: ₹50,000</span>
-                        <span>टूलकिट एवं प्रारंभिक व्यवस्था के लिए।</span>
+                        <span class="font-bold text-amber-600">✓ 1st Installment: ₹50,000</span>
+                        <span>For workspace setup, preliminary tools, and electrification.</span>
                     </div>
                     <div class="flex items-center gap-2 text-slate-800">
-                        <span class="font-bold text-blue-900">✓ 2nd किस्त: ₹1,00,000</span>
-                        <span>मशीनरी खरीद हेतु (मशीन का पक्का बिल एवं कोटेशन अनिवार्य)।</span>
+                        <span class="font-bold text-blue-900">✓ 2nd Installment: ₹1,00,000</span>
+                        <span>Dedicated for machinery purchase (requires verified GST machinery bill).</span>
                     </div>
                     <div class="flex items-center gap-2 text-slate-800">
-                        <span class="font-bold text-emerald-600">✓ 3rd किस्त: ₹50,000</span>
-                        <span>कार्यशील पूंजी एवं कच्चा माल खरीद के लिए।</span>
+                        <span class="font-bold text-emerald-600">✓ 3rd Installment: ₹50,000</span>
+                        <span>For working capital and commercial raw material inventory.</span>
                     </div>
                 </div>
                 <div class="pt-2">
-                    <span class="text-xs font-bold text-slate-800 block mb-1.5">₹2 लाख के बजट में श्रेष्ठ मशीनें:</span>
+                    <span class="text-xs font-bold text-slate-800 block mb-1.5">Top Machines Under ₹2 Lakhs Budget:</span>
                     <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">स्वचालित अगरबत्ती मेकिंग मशीन</span>
-                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">कपूर (टिकिया) मेकिंग मशीन</span>
-                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">हवाई चप्पल (स्लीपर) मेकिंग मशीन</span>
-                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">मिनी आटा चक्की व मसाला ग्राइंडर</span>
-                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">चाऊमीन / नूडल्स मेकिंग मशीन</span>
+                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">Automatic Agarbatti Making Machine</span>
+                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">Camphor Tablet Machine</span>
+                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">Hydraulic Slipper (Chappal) Machine</span>
+                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">Mini Flour Mill &amp; Spice Pulverizer</span>
+                        <span class="bg-amber-50 text-amber-900 px-2.5 py-1 rounded-md border border-amber-200 font-medium">Noodle &amp; Chowmein Extruder</span>
                     </div>
                 </div>
             </div>
             <div class="lg:col-span-4 bg-amber-500 text-slate-950 p-6 rounded-2xl text-center space-y-4">
-                <span class="text-xs font-bold uppercase tracking-wider block">लघु उद्यमी स्पेशल सपोर्ट</span>
+                <span class="text-xs font-bold uppercase tracking-wider block">Laghu Udyami Special Package</span>
                 <p class="text-xs text-slate-900 font-medium">
-                    हमारे पास ₹2 लाख के पैकेज के अनुकूल सभी मशीनें उपलब्ध हैं। बिल एवं लाइव डेमो तुरंत प्राप्त करें।
+                    We maintain comprehensive ₹2 Lakh machinery packages with instant GST invoicing and ready stock in Patna.
                 </p>
-                <button type="button" class="open-quote-modal w-full py-3 bg-slate-950 hover:bg-slate-900 text-white font-bold rounded-xl text-xs transition" data-machine="लघु उद्यमी योजना 2 लाख पैकेज">
-                    ₹2 लाख पैकेज कोटेशन लें
+                <button type="button" class="open-quote-modal w-full py-3 bg-slate-950 hover:bg-slate-900 text-white font-bold rounded-xl text-xs transition" data-machine="Laghu Udyami Yojana 2 Lakh Package">
+                    Get ₹2 Lakh Package Quote
                 </button>
-                <a href="https://wa.me/917061973186?text=Namaste%20Bharat%20Agro,%20mujhe%20Laghu%20Udyami%20Yojana%20ke%20machine%20quotation%20chahiye." target="_blank" rel="noopener" class="block text-xs font-bold text-blue-950 hover:underline">
-                    WhatsApp पर कोटेशन मंगाएं →
+                <a href="https://wa.me/917061973186?text=Hello%20Bharat%20Agro,%20I%20need%20the%20quotation%20for%20Laghu%20Udyami%20Yojana%20package." target="_blank" rel="noopener" class="block text-xs font-bold text-blue-950 hover:underline">
+                    Request Quote on WhatsApp →
                 </a>
             </div>
         </div>
@@ -135,35 +135,35 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
                 <span class="bg-emerald-100 text-emerald-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase">
-                    केंद्र सरकार • KVIC
+                    Central Govt • KVIC
                 </span>
                 <h3 class="text-xl font-bold font-['Outfit'] text-slate-900">
-                    3. प्रधानमंत्री रोजगार सृजन कार्यक्रम (PMEGP)
+                    3. Prime Minister Employment Generation Programme (PMEGP)
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    विनिर्माण (Manufacturing) इकाइयों के लिए ₹50 लाख तक बैंक ऋण की सुविधा। ग्रामीण क्षेत्रों में 35% और शहरी क्षेत्रों में 25% तक कैपिटल सब्सिडी दी जाती है।
+                    Provides bank financing up to ₹50 Lakhs for manufacturing units. Capital subsidy ranges from 25% in urban areas to 35% in rural areas.
                 </p>
                 <ul class="text-xs text-slate-700 space-y-2">
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> बैंक लोन के लिए विस्तृत प्रोजेक्ट रिपोर्ट (DPR) सहायता</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> कमर्शियल आरओ वाटर प्लांट, वायर नेल, प्लास्टिक मोल्डिंग हेतु मान्य</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> 18 वर्ष से अधिक आयु का कोई भी भारतीय नागरिक पात्र</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Detailed Project Report (DPR) preparation for bank approvals</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Eligible for Commercial RO Water Plants, Wire Nails, and Plastic Molding</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Open to any Indian citizen above 18 years of age</li>
                 </ul>
             </div>
 
             <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
                 <span class="bg-purple-100 text-purple-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase">
-                    खाद्य प्रसंस्करण मंत्रालय (MoFPI)
+                    Ministry of Food Processing Industries
                 </span>
                 <h3 class="text-xl font-bold font-['Outfit'] text-slate-900">
-                    4. प्रधानमंत्री खाद्य उद्यमी योजना (PMFME)
+                    4. PM Formalisation of Micro Food Processing Enterprises (PMFME)
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    फूड प्रोसेसिंग एवं कृषि आधारित उद्योगों के लिए विशेष 35% क्रेडिट लिंक्ड कैपिटल सब्सिडी (अधिकतम ₹10 लाख प्रति इकाई)।
+                    Offers a 35% credit-linked capital subsidy (up to ₹10 Lakhs per enterprise) for micro food processing businesses.
                 </p>
                 <ul class="text-xs text-slate-700 space-y-2">
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> आटा चक्की, दाल मिल, मसाला पिसाई एवं तेल मिल यूनिट्स</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> सोया पनीर (टोफू), पास्ता एवं मैकरोनी प्लांट</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> FSSAI फूड लाइसेंस एवं ब्रांडिंग व पैकेजिंग मार्गदर्शन</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Flour mills, pulse mills, spice grinders, and edible oil extraction</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Soya milk, tofu paneer, and commercial pasta plants</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> FSSAI food licensing, packaging, and brand guidance</li>
                 </ul>
             </div>
         </div>
@@ -171,32 +171,32 @@
         <!-- Required Documents Checklist -->
         <div class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm space-y-6">
             <h3 class="text-xl font-bold font-['Outfit'] text-slate-900 text-center">
-                आवेदन हेतु आवश्यक दस्तावेजों की सूची (Required Documents)
+                Required Documents Checklist for Application
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs sm:text-sm">
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-blue-900 block mb-1">1. आधार कार्ड एवं पैन कार्ड</span>
-                    <span class="text-slate-500">पहचान व पते के प्रमाण हेतु अनिवार्य।</span>
+                    <span class="font-bold text-blue-900 block mb-1">1. Aadhaar Card &amp; PAN Card</span>
+                    <span class="text-slate-500">Mandatory identity and address proof.</span>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-blue-900 block mb-1">2. निवास एवं जाति प्रमाण पत्र</span>
-                    <span class="text-slate-500">आरक्षित वर्ग एवं बिहार निवासी प्रमाण हेतु।</span>
+                    <span class="font-bold text-blue-900 block mb-1">2. Domicile &amp; Caste Certificate</span>
+                    <span class="text-slate-500">For Bihar residency and category quota claims.</span>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-blue-900 block mb-1">3. शैक्षणिक प्रमाण पत्र</span>
-                    <span class="text-slate-500">10वीं / 12वीं / आईटीआई पास मार्कशीट।</span>
+                    <span class="font-bold text-blue-900 block mb-1">3. Educational Certificate</span>
+                    <span class="text-slate-500">10th / 12th / ITI / Graduation marksheet.</span>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-blue-900 block mb-1">4. बैंक पासबुक / कैंसिल्ड चेक</span>
-                    <span class="text-slate-500">सब्सिडी व लोन राशि सीधे खाते में आने हेतु।</span>
+                    <span class="font-bold text-blue-900 block mb-1">4. Bank Passbook / Cheque</span>
+                    <span class="text-slate-500">For direct beneficiary transfer (DBT) disbursal.</span>
                 </div>
                 <div class="p-4 rounded-xl bg-amber-50 border border-amber-200">
-                    <span class="font-bold text-amber-900 block mb-1">5. मशीनरी का आधिकारिक कोटेशन</span>
-                    <span class="text-slate-700">भारत एग्रो पटना द्वारा प्रमाणित GST कोटेशन।</span>
+                    <span class="font-bold text-amber-900 block mb-1">5. Official Machinery Quotation</span>
+                    <span class="text-slate-700">Official GST quotation issued by Bharat Agro Patna.</span>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-blue-900 block mb-1">6. कार्यस्थल का पता / बिजली बिल</span>
-                    <span class="text-slate-500">जहां मशीन स्थापित की जानी है।</span>
+                    <span class="font-bold text-blue-900 block mb-1">6. Workshop Electricity Bill</span>
+                    <span class="text-slate-500">Proposed factory address / lease agreement.</span>
                 </div>
             </div>
         </div>
@@ -204,4 +204,3 @@
 </section>
 
 @endsection
-

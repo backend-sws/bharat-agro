@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('title', $product['name'] . ' | Bharat Agro Patna')
-@section('meta_description', $product['hindi_name'] . ' - ' . $product['short_desc'] . ' | पटना, बिहार व झारखण्ड में सरकारी योजना सब्सिडी सहित उपलब्ध।')
+@section('title', $product['name'] . ' | Bharat Agro Machinery Patna')
+@section('meta_description', $product['name'] . ' - ' . $product['short_desc'] . ' | Available with government subsidy and bank quotation in Bihar & Jharkhand.')
 
 @section('content')
 
 <!-- Breadcrumb -->
 <div class="bg-slate-100 py-3 border-b border-slate-200 text-xs text-slate-600">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2">
-        <a href="{{ route('home') }}" class="hover:text-blue-900">होम</a>
+        <a href="{{ route('home') }}" class="hover:text-blue-900">Home</a>
         <span>/</span>
-        <a href="{{ route('products') }}" class="hover:text-blue-900">मशीनें</a>
+        <a href="{{ route('products') }}" class="hover:text-blue-900">Products</a>
         <span>/</span>
         <span class="text-blue-900 font-bold truncate">{{ $product['name'] }}</span>
     </div>
@@ -33,7 +33,7 @@
 
                 <!-- Scheme Eligibility Alert Box -->
                 <div class="bg-amber-50 rounded-2xl p-4 border border-amber-200 space-y-2">
-                    <span class="text-xs font-bold text-amber-900 uppercase block">अनुमोदित सरकारी योजनाएं:</span>
+                    <span class="text-xs font-bold text-amber-900 uppercase block">Eligible Government Schemes:</span>
                     <div class="flex flex-wrap gap-1.5">
                         @foreach($product['schemes'] as $sch)
                             <span class="bg-white border border-amber-300 text-amber-950 text-xs font-semibold px-2.5 py-1 rounded-md">
@@ -42,7 +42,7 @@
                         @endforeach
                     </div>
                     <p class="text-[11px] text-amber-800 pt-1">
-                        इस मशीन पर 35% से 50% तक सरकारी सब्सिडी एवं ब्याजमुक्त ऋण सहायता उपलब्ध है।
+                        This machine qualifies for 35% to 50% capital subsidies and concessional loan assistance.
                     </p>
                 </div>
             </div>
@@ -51,14 +51,11 @@
             <div class="lg:col-span-7 space-y-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-3 py-1 rounded-md">
-                        ORIGINAL COMMERCIAL SPECIFICATION
+                        COMMERCIAL SPECIFICATION
                     </span>
                     <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 font-['Outfit']">
                         {{ $product['name'] }}
                     </h1>
-                    <p class="text-base font-semibold text-blue-900 mt-1 font-['Noto_Sans_Devanagari']">
-                        {{ $product['hindi_name'] }}
-                    </p>
                 </div>
 
                 <p class="text-sm text-slate-600 leading-relaxed">
@@ -68,35 +65,35 @@
                 <!-- Technical Specification Table -->
                 <div class="border border-slate-200 rounded-2xl overflow-hidden">
                     <div class="bg-slate-50 px-4 py-2.5 border-b border-slate-200 text-xs font-bold text-slate-800 uppercase tracking-wider">
-                        तकनीकी विनिर्देश (Technical Specifications)
+                        Technical Specifications
                     </div>
                     <div class="divide-y divide-slate-100 text-xs sm:text-sm">
                         <div class="grid grid-cols-3 px-4 py-2.5">
-                            <span class="text-slate-500 font-medium">उत्पादन क्षमता (Capacity):</span>
+                            <span class="text-slate-500 font-medium">Output Capacity:</span>
                             <span class="col-span-2 font-semibold text-slate-900">{{ $product['capacity'] }}</span>
                         </div>
                         <div class="grid grid-cols-3 px-4 py-2.5 bg-slate-50/50">
-                            <span class="text-slate-500 font-medium">मोटर पावर (Power):</span>
+                            <span class="text-slate-500 font-medium">Motor Power:</span>
                             <span class="col-span-2 font-semibold text-slate-900">{{ $product['power'] }}</span>
                         </div>
                         <div class="grid grid-cols-3 px-4 py-2.5">
-                            <span class="text-slate-500 font-medium">वारंटी (Warranty):</span>
-                            <span class="col-span-2 font-semibold text-emerald-700">1 वर्ष की संपूर्ण वारंटी + ऑन-साइट सर्विस</span>
+                            <span class="text-slate-500 font-medium">Warranty &amp; Service:</span>
+                            <span class="col-span-2 font-semibold text-emerald-700">1-Year Full Warranty + On-Site Technician Support</span>
                         </div>
                         <div class="grid grid-cols-3 px-4 py-2.5 bg-slate-50/50">
-                            <span class="text-slate-500 font-medium">सप्लाई एवं स्टॉक:</span>
-                            <span class="col-span-2 font-semibold text-slate-900">रेडी स्टॉक उपलब्ध (पटना गोदाम)</span>
+                            <span class="text-slate-500 font-medium">Stock &amp; Delivery:</span>
+                            <span class="col-span-2 font-semibold text-slate-900">Ready Stock Available in Patna Warehouse</span>
                         </div>
                         <div class="grid grid-cols-3 px-4 py-2.5">
-                            <span class="text-slate-500 font-medium">मानक एवं अनुपालन:</span>
-                            <span class="col-span-2 font-semibold text-slate-900">उद्योग विभाग, बिहार एवं MSME मानकों के अनुरूप</span>
+                            <span class="text-slate-500 font-medium">Compliance:</span>
+                            <span class="col-span-2 font-semibold text-slate-900">Complies with Department of Industries &amp; MSME Standards</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Features Points -->
                 <div>
-                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">मुख्य विशेषताएं (Key Highlights):</h3>
+                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Key Highlights &amp; Capabilities:</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
                         @foreach($product['features'] as $feat)
                             <div class="flex items-center gap-2 text-slate-700 font-medium">
@@ -113,19 +110,19 @@
                             class="open-quote-modal px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm shadow-md transition flex items-center gap-2"
                             data-machine="{{ $product['name'] }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        <span>सरकारी कोटेशन प्राप्त करें</span>
+                        <span>Request Official Quotation</span>
                     </button>
 
-                    <a href="https://wa.me/917061973186?text=Namaste%20Bharat%20Agro,%20mujhe%20{{ urlencode($product['name']) }}%20ke%20quotation%20aur%20specs%20chahiye."
+                    <a href="https://wa.me/917061973186?text=Hello%20Bharat%20Agro,%20I%20would%20like%20to%20request%20a%20quotation%20and%20specs%20for%20{{ urlencode($product['name']) }}."
                        target="_blank"
                        rel="noopener"
                        class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl text-sm shadow-md transition flex items-center gap-2">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                        <span>WhatsApp पर बात करें</span>
+                        <span>Chat on WhatsApp</span>
                     </a>
 
                     <a href="tel:+917061973186" class="px-5 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold rounded-xl text-sm transition flex items-center gap-2">
-                        <span>कॉल: 7061973186</span>
+                        <span>Call: 7061973186</span>
                     </a>
                 </div>
             </div>
@@ -140,11 +137,11 @@
                             SIMILAR MACHINERY
                         </span>
                         <h2 class="text-2xl font-bold font-['Outfit'] text-slate-900 mt-1">
-                            संबंधित अन्य मशीनें (Related Products)
+                            Related Machines in this Category
                         </h2>
                     </div>
                     <a href="{{ route('products', ['category' => $product['category']]) }}" class="text-xs font-bold text-blue-900 hover:underline">
-                        इस श्रेणी की सभी मशीनें देखें →
+                        View all machines in this category →
                     </a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -158,4 +155,3 @@
 </section>
 
 @endsection
-

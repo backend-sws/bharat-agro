@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Services • हमारी सेवाएं | Bharat Agro Industry & Machinery Patna')
-@section('meta_description', 'मशीनरी सप्लाई, सरकारी योजना कोटेशन, प्रोजेक्ट रिपोर्ट, ऑन-साइट इंस्टालेशन एवं ऑपरेटर ट्रेनिंग - भारत एग्रो इंडस्ट्री पटना।')
+@section('title', 'Services | Bharat Agro Industry & Machinery Patna')
+@section('meta_description', 'Machinery supply, government scheme quotation, project DPR preparation, on-site commissioning and operator training - Bharat Agro Industry Patna.')
 
 @section('content')
 
@@ -12,10 +12,10 @@
             END-TO-END INDUSTRIAL SERVICES
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit']">
-            SERVICES • हमारी सेवाएं
+            SERVICES
         </h1>
         <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
-            From Project Report to Installation &amp; Training - We Support Your Entire Entrepreneurship Journey
+            From Project DPR to Installation &amp; Training - We Support Your Entire Entrepreneurship Journey
         </p>
     </div>
 </div>
@@ -28,10 +28,10 @@
                 COMPREHENSIVE SUPPORT
             </span>
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-['Outfit']">
-                नए उद्योग की शुरुआत से लेकर सफल संचालन तक पूर्ण सहयोग
+                Comprehensive Support from Setup to Profitable Operations
             </h2>
             <p class="text-xs sm:text-sm text-slate-600">
-                हम सिर्फ मशीनें नहीं बेचते, बल्कि आपको एक सफल और आत्मनिर्भर उद्यमी बनाने के लिए हर संभव सेवा प्रदान करते हैं।
+                We do not merely supply machines - we provide turnkey technical, governmental, and operational services to ensure your enterprise flourishes.
             </p>
         </div>
 
@@ -42,10 +42,10 @@
                     📑
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    सरकारी योजना कोटेशन एवं प्रोजेक्ट रिपोर्ट
+                    Scheme Quotations &amp; Detailed Project Reports (DPR)
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    मुख्यमंत्री उद्यमी योजना, PMEGP और PMFME में बैंक लोन एवं सब्सिडी पास कराने के लिए उद्योग विभाग द्वारा मान्य आधिकारिक कोटेशन एवं विस्तृत DPR तैयार करके दी जाती है।
+                    Official GST machine quotations, technical specification sheets, and bankable project DPRs formatted for smooth clearance through District Industry Centers (DIC), KVIC, and commercial banks.
                 </p>
             </div>
 
@@ -55,10 +55,10 @@
                     🏭
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    रेडी स्टॉक एवं सुरक्षित मशीन डिलीवरी
+                    Ready Stock Inventory &amp; Safe Transport
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    पटना स्थित हमारे गोदाम में 27+ प्रकार की व्यावसायिक मशीनें रेडी स्टॉक में रहती हैं। बिहार व झारखण्ड के किसी भी जिले में सुरक्षित ट्रांसपोर्टेशन के साथ डिलीवरी कराई जाती है।
+                    Over 27 commercial machine models maintained in ready stock at our Patna warehouse. Safe, transit-insured freight delivery arranged to any district across Bihar and Jharkhand.
                 </p>
             </div>
 
@@ -68,10 +68,10 @@
                     🔧
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    ऑन-साइट इंस्टालेशन एवं टेस्टिंग
+                    On-Site Installation &amp; Commissioning
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    हमारे अनुभवी मैकेनिकल एवं इलेक्ट्रिकल तकनीशियन आपके कार्यस्थल पर जाकर मशीन की प्रॉपर फिटिंग, मोटर कनेक्शन और सफल ट्रायल रन सुनिश्चित करते हैं।
+                    Our experienced mechanical and electrical technicians visit your unit to manage foundation placement, motor alignment, circuit wiring, and initial test-batch production.
                 </p>
             </div>
 
@@ -81,10 +81,10 @@
                     👨‍🏫
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    व्यावहारिक ऑपरेटर ट्रेनिंग
+                    Hands-on Operator &amp; Safety Training
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    मशीन चलाने वाले ऑपरेटर को सुरक्षा, डाई बदलने, स्पीड कंट्रोल, लुब्रिकेशन और दैनिक मेंटेनेंस की पूरी हैंड-ऑन ट्रेनिंग दी जाती है ताकि उत्पादन बिना रुकावट चले।
+                    Your machine operators receive structured hands-on training on speed adjustments, die changeovers, lubrication cycles, preventative maintenance, and safety protocols.
                 </p>
             </div>
 
@@ -94,10 +94,10 @@
                     📦
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    कच्चा माल (Raw Material) सप्लायर गाइडेंस
+                    Raw Material Sourcing Guidance
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    अगरबत्ती स्टिक, प्रीमिक्स, कपूर पाउडर, पेपर कप रोल, फॉयल पेपर, चप्पल शीट आदि के विश्वसनीय व किफायती सप्लायर्स के सीधे संपर्क उपलब्ध कराए जाते हैं।
+                    We connect you directly with genuine suppliers for raw materials including incense sticks, premix powder, camphor crystals, paper rolls, packaging films, and rubber sheets.
                 </p>
             </div>
 
@@ -107,10 +107,10 @@
                     🛡️
                 </div>
                 <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
-                    1 साल वारंटी एवं स्पेयर पार्ट्स सपोर्ट
+                    1-Year Warranty &amp; Spare Parts Support
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    सभी प्रमुख मशीनों पर 1 वर्ष की वारंटी प्रदान की जाती है। पटना ऑफिस से कभी भी आवश्यक स्पेयर पार्ट्स, डाई, ब्लेड, बेल्ट आदि तुरंत उपलब्ध कराए जाते हैं।
+                    Comprehensive 1-year warranty coverage on major machinery. Genuine spare parts, custom dies, cutters, and belts dispatched promptly from our Patna facility.
                 </p>
             </div>
         </div>
@@ -121,17 +121,17 @@
                 SERVICE INQUIRY
             </span>
             <h3 class="text-2xl font-bold font-['Outfit'] text-slate-900">
-                क्या आपको इंस्टालेशन या कोटेशन से जुड़ी सहायता चाहिए?
+                Need Help with Machinery Quotations, DPR, or Installation?
             </h3>
             <p class="text-xs sm:text-sm text-slate-600">
-                हमारे सर्विस इंजीनियर से बात करने के लिए अभी कॉल करें या ऑनलाइन फॉर्म भरें।
+                Speak directly with our service engineers or submit an online inquiry.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a href="tel:+917061973186" class="px-6 py-3 bg-blue-900 hover:bg-blue-950 text-white font-semibold rounded-xl text-sm transition">
-                    कॉल करें: +91 7061973186
+                    Call: +91 7061973186
                 </a>
                 <button type="button" class="open-quote-modal px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm shadow transition">
-                    ऑनलाइन सर्विस रिक्वेस्ट भेजें
+                    Request Online Service
                 </button>
             </div>
         </div>
@@ -139,4 +139,3 @@
 </section>
 
 @endsection
-

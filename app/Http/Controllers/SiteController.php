@@ -66,7 +66,6 @@ class SiteController extends Controller
             $searchLower = mb_strtolower(trim($search));
             $products = array_filter($products, function ($p) use ($searchLower) {
                 return str_contains(mb_strtolower($p['name']), $searchLower)
-                    || str_contains(mb_strtolower($p['hindi_name']), $searchLower)
                     || str_contains(mb_strtolower($p['short_desc']), $searchLower)
                     || str_contains(mb_strtolower($p['category_label']), $searchLower);
             });
@@ -90,7 +89,7 @@ class SiteController extends Controller
         $product = ProductCatalog::findBySlug($slug);
 
         if (! $product) {
-            abort(404, 'उत्पाद नहीं मिला (Product not found)');
+            abort(404, 'Product not found');
         }
 
         // Related products in same category
@@ -171,12 +170,11 @@ class SiteController extends Controller
         if ($request->wantsJson()) {
             return response()->json([
                 'success' => true,
-                'message' => 'धन्यवाद! आपकी पूछताछ सफलता पूर्वक दर्ज हो गई है। हमारी तकनीकी टीम आपसे जल्द ही संपर्क करेगी।',
+                'message' => 'Thank you! Your quotation inquiry has been registered successfully. Our technical team will contact you shortly.',
                 'inquiry_id' => $inquiry->id,
             ]);
         }
 
-        return back()->with('success', 'धन्यवाद! आपकी पूछताछ (Inquiry) सफलतापूर्वक प्राप्त हो गई है। हमारी टीम जल्द ही आपसे 7061973186 से संपर्क करेगी।');
+        return back()->with('success', 'Thank you! Your machinery inquiry has been received successfully. Our team will contact you on +91 7061973186 shortly.');
     }
 }
-

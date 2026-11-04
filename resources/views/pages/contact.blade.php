@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us • संपर्क करें | Bharat Agro Industry & Machinery Patna')
-@section('meta_description', 'भारत एग्रो इंडस्ट्री पटना संपर्क सूत्र - 2nd Floor, Opp. Aryabhata University, Mithapur Old Bus Stand Road, Patna. फोन: 7061973186, 7858945066.')
+@section('title', 'Contact Us | Bharat Agro Industry & Machinery Patna')
+@section('meta_description', 'Bharat Agro Industry Patna contact info - 2nd Floor, Opp. Aryabhata University, Mithapur Old Bus Stand Road, Patna. Phone: 7061973186, 7858945066.')
 
 @section('content')
 
@@ -12,7 +12,7 @@
             GET IN TOUCH WITH US
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit']">
-            CONTACT US • संपर्क सूत्र
+            CONTACT US
         </h1>
         <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
             We’re here to help you start or grow your business with the right machinery under government-supported schemes.
@@ -20,9 +20,9 @@
     </div>
 </div>
 
-<!-- Notice Bar in Hindi -->
+<!-- Notice Bar in English -->
 <div class="bg-amber-100 text-amber-900 py-3 px-4 border-b border-amber-200 text-xs sm:text-sm font-medium text-center">
-    सरकारी योजनाओं जैसे मुख्यमंत्री उद्यमी योजना, मुख्यमंत्री लघु उद्यमी योजना, प्रधानमंत्री रोजगार योजना और प्रधानमंत्री खाद्य उद्यमी योजना के अंतर्गत सभी आवश्यक मशीनों की सुविधा उपलब्ध है।
+    Certified machinery available under government schemes including Mukhyamantri Udyami Yojana, Laghu Udyami Yojana, PMEGP, and PMFME.
 </div>
 
 <!-- Contact Content Section -->
@@ -50,7 +50,7 @@
                             📍
                         </div>
                         <div>
-                            <span class="font-bold text-slate-900 block text-sm">कार्यालय एवं शोरूम का पता:</span>
+                            <span class="font-bold text-slate-900 block text-sm">Office &amp; Showroom Address:</span>
                             <span class="text-slate-600 block mt-1">2nd Floor, Opp. Aryabhata University, Mithapur Old Bus Stand Road, Patna-01, Bihar</span>
                         </div>
                     </div>
@@ -60,11 +60,11 @@
                             📞
                         </div>
                         <div>
-                            <span class="font-bold text-slate-900 block text-sm">कॉल एवं व्हाट्सएप:</span>
+                            <span class="font-bold text-slate-900 block text-sm">Call &amp; WhatsApp:</span>
                             <div class="text-slate-700 mt-1 space-y-0.5">
-                                <div>मोबाइल: <a href="tel:+917061973186" class="font-semibold text-blue-900 hover:underline">+91 7061973186</a></div>
-                                <div>हेल्पलाइन: <a href="tel:+917858945066" class="font-semibold text-blue-900 hover:underline">+91 7858945066</a></div>
-                                <div>लैंडलाइन: <span class="font-semibold text-slate-900">0612 3171580</span></div>
+                                <div>Mobile: <a href="tel:+917061973186" class="font-semibold text-blue-900 hover:underline">+91 7061973186</a></div>
+                                <div>Helpline: <a href="tel:+917858945066" class="font-semibold text-blue-900 hover:underline">+91 7858945066</a></div>
+                                <div>Landline: <span class="font-semibold text-slate-900">0612 3171580</span></div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                             ✉️
                         </div>
                         <div>
-                            <span class="font-bold text-slate-900 block text-sm">ईमेल एवं जीएसटी विवरण:</span>
+                            <span class="font-bold text-slate-900 block text-sm">Email &amp; Tax Registration:</span>
                             <span class="text-slate-600 block mt-1">Email: <a href="mailto:bharatagro02@gmail.com" class="text-blue-900 hover:underline">bharatagro02@gmail.com</a></span>
                             <span class="text-amber-800 font-bold block mt-1">GSTIN: 10CJJPD5303B1Z7</span>
                         </div>
@@ -85,9 +85,9 @@
                             🕒
                         </div>
                         <div>
-                            <span class="font-bold text-slate-900 block text-sm">कार्यालय का समय:</span>
-                            <span class="text-slate-600 block mt-1">सोमवार से शनिवार: प्रातः 09:30 बजे से सायं 07:30 बजे तक</span>
-                            <span class="text-slate-500 text-xs block">रविवार: अपॉइंटमेंट अनुसार खुला</span>
+                            <span class="font-bold text-slate-900 block text-sm">Operating Hours:</span>
+                            <span class="text-slate-600 block mt-1">Monday - Saturday: 9:30 AM to 7:30 PM</span>
+                            <span class="text-slate-500 text-xs block">Sunday: Open by prior appointment</span>
                         </div>
                     </div>
                 </div>
@@ -95,13 +95,13 @@
                 <!-- Direct WhatsApp Box -->
                 <div class="bg-emerald-600 text-white p-6 rounded-2xl shadow-lg space-y-3">
                     <h3 class="text-base font-bold flex items-center gap-2">
-                        <span>💬 व्हाट्सएप पर सीधे बात करें</span>
+                        <span>💬 Chat Directly on WhatsApp</span>
                     </h3>
                     <p class="text-xs text-emerald-100">
-                        मशीन का फोटो, वीडियो डेमो और तुरंत कोटेशन पीडीएफ व्हाट्सएप पर मंगाने के लिए नीचे क्लिक करें।
+                        Request live machinery demonstration videos, catalog brochures, and official quotation PDFs on WhatsApp.
                     </p>
-                    <a href="https://wa.me/917061973186?text=Namaste%20Bharat%20Agro%20Patna,%20mujhe%20machinery%20aur%20yojana%20subsidy%20ki%20details%20chahiye." target="_blank" rel="noopener" class="inline-block px-5 py-2.5 bg-white text-emerald-800 font-bold rounded-xl text-xs shadow hover:bg-emerald-50 transition">
-                        व्हाट्सएप खोलें (+91 7061973186)
+                    <a href="https://wa.me/917061973186?text=Hello%20Bharat%20Agro%20Patna,%20I%20need%20details%20on%20machinery%20and%20government%20subsidies." target="_blank" rel="noopener" class="inline-block px-5 py-2.5 bg-white text-emerald-800 font-bold rounded-xl text-xs shadow hover:bg-emerald-50 transition">
+                        Open WhatsApp (+91 7061973186)
                     </a>
                 </div>
             </div>
@@ -113,10 +113,10 @@
                         ONLINE INQUIRY FORM
                     </span>
                     <h2 class="text-2xl font-bold font-['Outfit'] text-slate-900 mt-2">
-                        संपर्क एवं कोटेशन फॉर्म (Contact Form)
+                        Contact &amp; Machinery Quotation Form
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-500 mt-1">
-                        अपना विवरण भरें, हमारे अधिकारी शीघ्र ही आपको फोन या व्हाट्सएप पर संपर्क करेंगे।
+                        Fill in your details below and our technical officers will connect with you via phone or WhatsApp.
                     </p>
                 </div>
 
@@ -124,55 +124,55 @@
                     @csrf
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">आपका नाम (Full Name) *</label>
-                            <input type="text" name="name" required placeholder="अपना पूरा नाम लिखें" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Full Name *</label>
+                            <input type="text" name="name" required placeholder="Enter your full name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">मोबाइल नंबर (WhatsApp No.) *</label>
-                            <input type="tel" name="phone" required placeholder="10 अंकों का फोन नंबर" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Mobile / WhatsApp No. *</label>
+                            <input type="tel" name="phone" required placeholder="10-digit mobile number" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">ईमेल (Email Address)</label>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address</label>
                             <input type="email" name="email" placeholder="example@gmail.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">शहर / जिला (City / District) *</label>
-                            <input type="text" name="city" required placeholder="उदा. पटना, मुजफ्फरपुर, रांची" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">City / District *</label>
+                            <input type="text" name="city" required placeholder="e.g. Patna, Muzaffarpur, Ranchi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">मशीन चुनें (Machine Interested In)</label>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Select Machine</label>
                             <select name="machine_name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none bg-white">
-                                <option value="">-- कृपया मशीन चुनें --</option>
+                                <option value="">-- Please select machine --</option>
                                 @foreach($products as $p)
-                                    <option value="{{ $p['name'] }}">{{ $p['name'] }} ({{ $p['hindi_name'] }})</option>
+                                    <option value="{{ $p['name'] }}">{{ $p['name'] }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">सरकारी योजना (Government Scheme)</label>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Government Scheme</label>
                             <select name="scheme" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none bg-white">
-                                <option value="मुख्यमंत्री उद्यमी योजना">मुख्यमंत्री उद्यमी योजना (बिहार - ₹10 लाख)</option>
-                                <option value="मुख्यमंत्री लघु उद्यमी योजना">मुख्यमंत्री लघु उद्यमी योजना (₹2 लाख फ्री ग्रांट)</option>
-                                <option value="PMEGP">प्रधानमंत्री रोजगार योजना (PMEGP)</option>
-                                <option value="PMFME">प्रधानमंत्री खाद्य उद्यमी योजना (PMFME)</option>
-                                <option value="निजी निवेश">निजी निवेश / गैर-सब्सिडी</option>
+                                <option value="Mukhyamantri Udyami Yojana">Mukhyamantri Udyami Yojana (Bihar - ₹10 Lakhs)</option>
+                                <option value="Mukhyamantri Laghu Udyami Yojana">Mukhyamantri Laghu Udyami Yojana (₹2 Lakhs Grant)</option>
+                                <option value="PMEGP">PMEGP (Up to 35% Capital Subsidy)</option>
+                                <option value="PMFME">PMFME (Food Processing Scheme)</option>
+                                <option value="Private / Self-Investment">Self-Investment / Non-Subsidy</option>
                             </select>
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">संदेश या आवश्यकता (Message / Inquiry Details)</label>
-                        <textarea name="message" rows="4" placeholder="मशीन की क्षमता, कीमत, डिलीवरी समय, या सब्सिडी से संबंधित प्रश्न लिखें..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none"></textarea>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Message or Requirements</label>
+                        <textarea name="message" rows="4" placeholder="Specify required capacity, power setup, delivery timeline, or questions..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-900 outline-none"></textarea>
                     </div>
 
                     <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-slate-950 font-bold rounded-xl text-base shadow-lg transition-transform hover:scale-[1.01]">
-                        पूछताछ दर्ज करें (Submit Inquiry)
+                        Submit Inquiry
                     </button>
                 </form>
             </div>
@@ -185,7 +185,7 @@
                     LOCATION ON GOOGLE MAP
                 </span>
                 <h3 class="text-2xl font-bold font-['Outfit'] text-slate-900 mt-2">
-                    Find us on The Map • हमारा स्थान
+                    Find us on The Map
                 </h3>
             </div>
             <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-xl h-96 bg-slate-200">
@@ -204,4 +204,3 @@
 </section>
 
 @endsection
-

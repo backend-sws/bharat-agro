@@ -11,17 +11,17 @@
         <span class="text-xs font-semibold text-slate-500">{{ $scheme['sub_title'] }}</span>
     </div>
 
-    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-900 transition-colors font-['Noto_Sans_Devanagari',sans-serif]">
+    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-900 transition-colors font-['Outfit',sans-serif]">
         {{ $scheme['name'] }}
     </h3>
 
     <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-3 my-3">
-        <span class="text-xs text-amber-800 font-semibold block">सब्सिडी / वित्तीय सहायता:</span>
+        <span class="text-xs text-amber-800 font-semibold block">Subsidy / Financial Assistance:</span>
         <span class="text-sm font-extrabold text-amber-950 block mt-0.5">{{ $scheme['grant'] }}</span>
     </div>
 
     <p class="text-xs text-slate-600 mb-3 font-medium">
-        <strong class="text-slate-800">पात्रता:</strong> {{ $scheme['eligible_for'] }}
+        <strong class="text-slate-800">Eligibility:</strong> {{ $scheme['eligible_for'] }}
     </p>
 
     <div class="space-y-2 mb-6 flex-grow">
@@ -39,9 +39,8 @@
         <button type="button"
                 class="open-quote-modal w-full py-2.5 px-4 bg-slate-900 hover:bg-blue-900 text-white font-semibold rounded-lg text-xs transition flex items-center justify-center gap-2 group-hover:bg-blue-800"
                 data-machine="{{ $scheme['name'] }} Machinery">
-            <span>इस योजना के अंतर्गत मशीन चुनें</span>
+            <span>Explore Machines Under Scheme</span>
             <span class="text-amber-400">→</span>
         </button>
     </div>
 </div>
-

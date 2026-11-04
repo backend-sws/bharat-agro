@@ -18,7 +18,7 @@ class SitePagesTest extends TestCase
         $response = $this->get('/');
         $response->assertStatus(200);
         $response->assertSee('Bharat Agro');
-        $response->assertSee('मुख्यमंत्री उद्यमी योजना');
+        $response->assertSee('Commercial Machinery Available');
     }
 
     /**
@@ -40,7 +40,7 @@ class SitePagesTest extends TestCase
         $response = $this->get('/products/aata-chakki-machine');
         $response->assertStatus(200);
         $response->assertSee('Commercial Aata Chakki Machine');
-        $response->assertSee('कमर्शियल आटा चक्की मशीन');
+        $response->assertSee('Technical Specifications');
     }
 
     /**
@@ -62,7 +62,7 @@ class SitePagesTest extends TestCase
         $response = $this->get('/services');
         $response->assertStatus(200);
         $response->assertSee('SERVICES');
-        $response->assertSee('सरकारी योजना कोटेशन एवं प्रोजेक्ट रिपोर्ट');
+        $response->assertSee('Scheme Quotations');
     }
 
     /**
@@ -72,8 +72,8 @@ class SitePagesTest extends TestCase
     {
         $response = $this->get('/schemes');
         $response->assertStatus(200);
-        $response->assertSee('मुख्यमंत्री उद्यमी योजना');
-        $response->assertSee('मुख्यमंत्री लघु उद्यमी योजना');
+        $response->assertSee('Mukhyamantri Udyami Yojana');
+        $response->assertSee('Government Schemes & Subsidies Guide');
     }
 
     /**
@@ -93,14 +93,14 @@ class SitePagesTest extends TestCase
     public function test_inquiry_submission(): void
     {
         $payload = [
-            'name' => 'राजेश कुमार',
+            'name' => 'Rajesh Kumar',
             'phone' => '9876543210',
             'email' => 'rajesh@example.com',
-            'city' => 'पटना',
+            'city' => 'Patna',
             'state' => 'Bihar',
             'machine_name' => 'Commercial Aata Chakki Machine',
-            'scheme' => 'मुख्यमंत्री उद्यमी योजना',
-            'message' => 'कृपया कोटेशन भेजें।',
+            'scheme' => 'Mukhyamantri Udyami Yojana',
+            'message' => 'Please provide quotation.',
         ];
 
         $response = $this->post('/inquiry', $payload);
@@ -108,7 +108,7 @@ class SitePagesTest extends TestCase
         $response->assertSessionHas('success');
 
         $this->assertDatabaseHas('inquiries', [
-            'name' => 'राजेश कुमार',
+            'name' => 'Rajesh Kumar',
             'phone' => '9876543210',
         ]);
     }

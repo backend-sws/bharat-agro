@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'About Us • हमारे बारे में | Bharat Agro Industry & Machinery Patna')
-@section('meta_description', 'पटना (बिहार) में स्थित भारत एग्रो इंडस्ट्री एवं मशीनरी - सरकारी योजनाओं के तहत अनुमोदित कमर्शियल व एग्रो मशीनरी के विश्वसनीय आपूर्तिकर्ता।')
+@section('title', 'About Us | Bharat Agro Industry & Machinery Patna')
+@section('meta_description', 'Bharat Agro Industry & Machinery Patna - trusted supplier and exporter of commercial agro and industrial machines under government subsidy schemes in Bihar & Jharkhand.')
 
 @section('content')
 
@@ -12,7 +12,7 @@
             ESTABLISHED IN PATNA, BIHAR
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit']">
-            ABOUT US • कंपनी परिचय
+            ABOUT US
         </h1>
         <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
             Your Trusted Partner for Commercial Machinery Solutions Across Bihar &amp; Jharkhand
@@ -47,9 +47,9 @@
                 </div>
 
                 <div class="bg-blue-50 border-l-4 border-blue-900 p-4 rounded-r-xl">
-                    <h4 class="font-bold text-blue-950 text-sm mb-1">हमारा दृष्टिकोण (Our Vision):</h4>
+                    <h4 class="font-bold text-blue-950 text-sm mb-1">Our Vision:</h4>
                     <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        बिहार और झारखण्ड के प्रत्येक इच्छुक युवा, महिला और उद्यमी को आत्मनिर्भर बनाना और स्थानीय स्तर पर रोजगार के नए अवसर सृजित करना।
+                        To enable aspiring youths, women, and rural entrepreneurs across Bihar and Jharkhand to establish sustainable, profitable manufacturing units with comprehensive technical and governmental scheme support.
                     </p>
                 </div>
             </div>
@@ -69,7 +69,7 @@
     </div>
 </section>
 
-<!-- Ready Stock & Scheme Focus (From Original Content) -->
+<!-- Ready Stock & Scheme Focus -->
 <section class="py-16 sm:py-20 bg-slate-50 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -104,10 +104,10 @@
                     We are an exporter and supplier of a wide range of commercial machines used in food processing, agro-based industries, and small-scale manufacturing. Our solutions are designed to meet the eligibility and technical requirements of government schemes such as:
                 </p>
                 <ul class="text-xs text-slate-700 space-y-1.5 font-medium">
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> मुख्यमंत्री उद्यमी योजना (बिहार)</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> मुख्यमंत्री लघु उद्यमी योजना (₹2 लाख फ्री ग्रांट)</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> प्रधानमंत्री रोजगार सृजन कार्यक्रम (PMEGP)</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> प्रधानमंत्री खाद्य उद्यमी योजना (PMFME)</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Mukhyamantri Udyami Yojana (Bihar)</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Mukhyamantri Laghu Udyami Yojana (₹2 Lakhs Free Grant)</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Prime Minister Employment Generation Programme (PMEGP)</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> PM Formalisation of Micro Food Processing Enterprises (PMFME)</li>
                 </ul>
             </div>
         </div>
@@ -122,7 +122,7 @@
             </p>
             <div class="pt-2">
                 <button type="button" class="open-quote-modal px-6 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs sm:text-sm shadow">
-                    हमारे पटना कार्यालय से संपर्क करें
+                    Contact Our Patna Office
                 </button>
             </div>
         </div>
@@ -137,7 +137,7 @@
                 HONOR &amp; ACHIEVEMENTS
             </span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
-                सराहना एवं उपलब्धियां
+                Awards &amp; Recognition
             </h2>
         </div>
 
@@ -153,4 +153,3 @@
 </section>
 
 @endsection
-
