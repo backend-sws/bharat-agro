@@ -231,21 +231,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Mobile Menu Toggle
+    // 6. Mobile Menu Toggle & Accordions
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
             const isHidden = mobileMenu.classList.contains('hidden');
             if (isHidden) {
                 mobileMenu.classList.remove('hidden');
+                if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
+                if (closeIcon) closeIcon.classList.remove('hidden');
                 gsap.fromTo(
                     mobileMenu,
                     { opacity: 0, height: 0 },
                     { opacity: 1, height: 'auto', duration: 0.3, ease: 'power2.out' }
                 );
             } else {
+                if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+                if (closeIcon) closeIcon.classList.add('hidden');
                 gsap.to(mobileMenu, {
                     opacity: 0,
                     height: 0,
@@ -253,6 +259,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     ease: 'power2.in',
                     onComplete: () => mobileMenu.classList.add('hidden'),
                 });
+            }
+        });
+    }
+
+    // Mobile Catalog Accordion
+    const mobileCatalogBtn = document.getElementById('mobile-catalog-btn');
+    const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+    const mobileCatalogArrow = document.getElementById('mobile-catalog-arrow');
+
+    if (mobileCatalogBtn && mobileCatalogSubmenu) {
+        mobileCatalogBtn.addEventListener('click', () => {
+            const isHidden = mobileCatalogSubmenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileCatalogSubmenu.classList.remove('hidden');
+                if (mobileCatalogArrow) mobileCatalogArrow.classList.add('rotate-180');
+            } else {
+                mobileCatalogSubmenu.classList.add('hidden');
+                if (mobileCatalogArrow) mobileCatalogArrow.classList.remove('rotate-180');
+            }
+        });
+    }
+
+    // Mobile Schemes Accordion
+    const mobileSchemesBtn = document.getElementById('mobile-schemes-btn');
+    const mobileSchemesSubmenu = document.getElementById('mobile-schemes-submenu');
+    const mobileSchemesArrow = document.getElementById('mobile-schemes-arrow');
+
+    if (mobileSchemesBtn && mobileSchemesSubmenu) {
+        mobileSchemesBtn.addEventListener('click', () => {
+            const isHidden = mobileSchemesSubmenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileSchemesSubmenu.classList.remove('hidden');
+                if (mobileSchemesArrow) mobileSchemesArrow.classList.add('rotate-180');
+            } else {
+                mobileSchemesSubmenu.classList.add('hidden');
+                if (mobileSchemesArrow) mobileSchemesArrow.classList.remove('rotate-180');
             }
         });
     }
