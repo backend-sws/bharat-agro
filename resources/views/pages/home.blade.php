@@ -265,32 +265,49 @@
 </section>
 
 <!-- 5. Government Schemes Showcase -->
-<section class="py-16 sm:py-20 bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-blue-900 bg-blue-100 px-3 py-1 rounded-md">
-                GOVERNMENT SUBSIDY SCHEMES
+<section class="py-16 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-y border-slate-200/90 relative overflow-hidden">
+    <!-- Subtle Industrial Dot Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] opacity-35 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-3.5">
+            <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-900 bg-blue-100/90 border border-blue-200/80 px-4 py-1 rounded-full shadow-xs">
+                <span class="w-2 h-2 rounded-full bg-blue-700 animate-pulse"></span>
+                Official Government Subsidy Partner
             </span>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-['Outfit']">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
                 We Supply Machines Eligible Under the Following Schemes
             </h2>
-            <p class="text-xs sm:text-sm text-slate-600">
-                Avail substantial capital subsidies from the Central &amp; State Governments on commercial machinery. Comprehensive support from bank quotation to final installation.
+            <p class="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                Avail substantial capital subsidies from the Central &amp; State Governments on certified commercial machinery. We provide end-to-end support from official GST bank quotation and project DPR preparation to on-site installation.
             </p>
+
+            <!-- Quick Trust Pills -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 pt-2 text-xs font-semibold text-slate-700">
+                <span class="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-xs">
+                    <span class="text-amber-500">⭐</span> ₹2 Lakhs 100% Free Grant
+                </span>
+                <span class="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-xs">
+                    <span class="text-blue-600">⚡</span> ₹10 Lakhs Project Loan &amp; 50% Subsidy
+                </span>
+                <span class="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-xs">
+                    <span class="text-emerald-600">📄</span> Instant Bank Quotation &amp; DPR
+                </span>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gsap-stagger-parent">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gsap-stagger-parent">
             @foreach($schemes as $scheme)
-                <div class="gsap-stagger-item">
+                <div class="gsap-stagger-item flex">
                     <x-scheme-card :scheme="$scheme" />
                 </div>
             @endforeach
         </div>
 
-        <div class="mt-12 text-center">
-            <a href="{{ route('schemes') }}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-blue-900 transition">
+        <div class="mt-14 text-center">
+            <a href="{{ route('schemes') }}" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 hover:from-blue-900 hover:to-slate-900 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all group">
                 <span>View Complete Scheme Guidelines &amp; Application Steps</span>
-                <span class="text-amber-400">→</span>
+                <span class="text-amber-400 font-bold group-hover:translate-x-1 transition-transform">→</span>
             </a>
         </div>
     </div>
