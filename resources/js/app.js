@@ -231,37 +231,90 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Mobile Menu Toggle & Accordions
+    // 6. Modern Mobile Menu Drawer & Accordions
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const closeIcon = document.getElementById('close-icon');
 
+    let isMobileMenuOpen = false;
+
+    function openMobileMenu() {
+        if (!mobileMenu) return;
+        isMobileMenuOpen = true;
+
+        mobileMenu.classList.remove('-translate-y-4', 'opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+        if (mobileMenuBackdrop) {
+            mobileMenuBackdrop.classList.remove('hidden');
+            requestAnimationFrame(() => {
+                mobileMenuBackdrop.classList.remove('opacity-0');
+                mobileMenuBackdrop.classList.add('opacity-100');
+            });
+        }
+
+        if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
+        if (closeIcon) closeIcon.classList.remove('hidden');
+        if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('overflow-hidden');
+    }
+
+    function closeMobileMenu() {
+        if (!mobileMenu || !isMobileMenuOpen) return;
+        isMobileMenuOpen = false;
+
+        mobileMenu.classList.add('-translate-y-4', 'opacity-0', 'pointer-events-none');
+        mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+        if (mobileMenuBackdrop) {
+            mobileMenuBackdrop.classList.add('opacity-0');
+            mobileMenuBackdrop.classList.remove('opacity-100');
+            setTimeout(() => {
+                if (!isMobileMenuOpen) mobileMenuBackdrop.classList.add('hidden');
+            }, 300);
+        }
+
+        if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('overflow-hidden');
+    }
+
     if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
-                if (closeIcon) closeIcon.classList.remove('hidden');
-                gsap.fromTo(
-                    mobileMenu,
-                    { opacity: 0, height: 0 },
-                    { opacity: 1, height: 'auto', duration: 0.3, ease: 'power2.out' }
-                );
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (isMobileMenuOpen) {
+                closeMobileMenu();
             } else {
-                if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
-                if (closeIcon) closeIcon.classList.add('hidden');
-                gsap.to(mobileMenu, {
-                    opacity: 0,
-                    height: 0,
-                    duration: 0.2,
-                    ease: 'power2.in',
-                    onComplete: () => mobileMenu.classList.add('hidden'),
-                });
+                openMobileMenu();
             }
         });
     }
+
+    if (mobileMenuBackdrop) {
+        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+    }
+
+    // Auto-close drawer on tapping navigation links
+    document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isMobileMenuOpen) {
+            closeMobileMenu();
+        }
+    });
+
+    // Close mobile menu if resized to desktop viewport
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024 && isMobileMenuOpen) {
+            closeMobileMenu();
+        }
+    });
 
     // Mobile Catalog Accordion
     const mobileCatalogBtn = document.getElementById('mobile-catalog-btn');
@@ -269,7 +322,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileCatalogArrow = document.getElementById('mobile-catalog-arrow');
 
     if (mobileCatalogBtn && mobileCatalogSubmenu) {
-        mobileCatalogBtn.addEventListener('click', () => {
+        mobileCatalogBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
             const isHidden = mobileCatalogSubmenu.classList.contains('hidden');
             if (isHidden) {
                 mobileCatalogSubmenu.classList.remove('hidden');
@@ -287,7 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileSchemesArrow = document.getElementById('mobile-schemes-arrow');
 
     if (mobileSchemesBtn && mobileSchemesSubmenu) {
-        mobileSchemesBtn.addEventListener('click', () => {
+        mobileSchemesBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
             const isHidden = mobileSchemesSubmenu.classList.contains('hidden');
             if (isHidden) {
                 mobileSchemesSubmenu.classList.remove('hidden');

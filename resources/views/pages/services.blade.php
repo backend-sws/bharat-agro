@@ -35,13 +35,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
             <!-- Service 1 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     📑
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     Scheme Quotations &amp; Detailed Project Reports (DPR)
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -50,11 +50,11 @@
             </div>
 
             <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     🏭
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     Ready Stock Inventory &amp; Safe Transport
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -63,11 +63,11 @@
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     🔧
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     On-Site Installation &amp; Commissioning
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -76,11 +76,11 @@
             </div>
 
             <!-- Service 4 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     👨‍🏫
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     Hands-on Operator &amp; Safety Training
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -89,11 +89,11 @@
             </div>
 
             <!-- Service 5 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     📦
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     Raw Material Sourcing Guidance
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -102,11 +102,11 @@
             </div>
 
             <!-- Service 6 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
-                <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center font-bold text-2xl">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center font-bold text-xl sm:text-2xl">
                     🛡️
                 </div>
-                <h3 class="text-lg font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-base sm:text-lg font-bold font-['Outfit'] text-slate-900">
                     1-Year Warranty &amp; Spare Parts Support
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">

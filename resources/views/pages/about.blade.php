@@ -72,16 +72,16 @@
 <!-- Ready Stock & Scheme Focus -->
 <section class="py-16 sm:py-20 bg-slate-50 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
             <!-- Left Card -->
-            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm space-y-4">
                 <div class="w-12 h-12 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-xl">
                     📦
                 </div>
-                <h3 class="text-xl font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-lg sm:text-xl font-bold font-['Outfit'] text-slate-900">
                     Machines &amp; Materials Available in Ready Stock
                 </h3>
-                <h4 class="text-sm font-semibold text-blue-900">
+                <h4 class="text-xs sm:text-sm font-semibold text-blue-900">
                     Commercial machines and materials available for immediate supply
                 </h4>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -90,14 +90,14 @@
             </div>
 
             <!-- Right Card -->
-            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div class="bg-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm space-y-4">
                 <div class="w-12 h-12 rounded-2xl bg-blue-900 text-white flex items-center justify-center font-bold text-xl">
                     📜
                 </div>
-                <h3 class="text-xl font-bold font-['Outfit'] text-slate-900">
+                <h3 class="text-lg sm:text-xl font-bold font-['Outfit'] text-slate-900">
                     Special Focus on Government Schemes
                 </h3>
-                <h4 class="text-sm font-semibold text-blue-900">
+                <h4 class="text-xs sm:text-sm font-semibold text-blue-900">
                     Eligible &amp; Approved Under State and Central Subsidy Programs
                 </h4>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -113,7 +113,7 @@
         </div>
 
         <!-- Beyond Machine Supply Note -->
-        <div class="mt-10 bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-lg text-center max-w-4xl mx-auto space-y-3">
+        <div class="mt-8 sm:mt-10 bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-lg text-center max-w-4xl mx-auto space-y-3">
             <h3 class="text-lg sm:text-xl font-bold font-['Outfit'] text-amber-400">
                 Complete End-to-End Entrepreneur Support
             </h3>

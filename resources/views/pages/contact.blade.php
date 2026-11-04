@@ -107,12 +107,12 @@
             </div>
 
             <!-- Right Form Column -->
-            <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl space-y-6">
+            <div class="lg:col-span-7 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 border border-slate-200 shadow-xl space-y-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-blue-900 bg-blue-100 px-3 py-1 rounded-md">
                         ONLINE INQUIRY FORM
                     </span>
-                    <h2 class="text-2xl font-bold font-['Outfit'] text-slate-900 mt-2">
+                    <h2 class="text-xl sm:text-2xl font-bold font-['Outfit'] text-slate-900 mt-2">
                         Contact &amp; Machinery Quotation Form
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-500 mt-1">

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden w-full max-w-full">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Bharat Agro Industry & Machinery | Patna - Government Scheme Approved Machines')</title>
     <meta name="description" content="@yield('meta_description', 'Leading manufacturer and supplier of commercial agro and industrial machinery approved under Mukhyamantri Udyami Yojana, Laghu Udyami Yojana, PMEGP, and PMFME in Bihar & Jharkhand.')">
@@ -17,24 +17,25 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900 flex flex-col min-h-screen font-['Poppins',sans-serif]">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900 flex flex-col min-h-screen font-['Poppins',sans-serif] overflow-x-hidden w-full max-w-full relative">
 
-    <!-- Single Unified Sleek Top Utility Bar -->
-    <div class="bg-slate-900 text-slate-300 py-1.5 px-4 text-xs border-b border-slate-800 relative z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+    <!-- Single Unified Sleek Top Utility Bar (Mobile-Safe & Fully Responsive) -->
+    <div class="bg-slate-900 text-slate-300 py-1.5 px-3 sm:px-4 text-xs border-b border-slate-800 relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
             <!-- Left: Contact Lines & Status -->
-            <div class="flex items-center gap-3 sm:gap-5 whitespace-nowrap">
-                <span class="inline-flex items-center gap-1.5 text-slate-300">
+            <div class="flex items-center gap-2.5 sm:gap-5 whitespace-nowrap overflow-hidden">
+                <span class="hidden sm:inline-flex items-center gap-1.5 text-slate-300">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span class="hidden sm:inline text-slate-400">Patna Showroom:</span> <strong class="text-white font-medium">9 AM – 8 PM</strong>
+                    <span class="text-slate-400">Patna Showroom:</span> <strong class="text-white font-medium">9 AM – 8 PM</strong>
                 </span>
-                <a href="tel:+917061973186" class="inline-flex items-center gap-1.5 text-slate-200 hover:text-amber-400 transition-colors font-medium">
-                    <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="tel:+917061973186" class="inline-flex items-center gap-1.5 text-slate-100 hover:text-amber-400 transition-colors font-medium text-[11px] sm:text-xs">
+                    <span class="sm:hidden w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+                    <svg class="w-3.5 h-3.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
                     <span>+91 7061973186</span>
                 </a>
-                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors">
+                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors text-xs">
                     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
                     <span>WhatsApp</span>
                 </a>
@@ -46,10 +47,13 @@
             </div>
 
             <!-- Right: GSTIN & Socials -->
-            <div class="flex items-center gap-3 text-xs whitespace-nowrap">
+            <div class="flex items-center gap-2 sm:gap-3 text-xs whitespace-nowrap shrink-0">
+                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="md:hidden inline-flex items-center gap-1 text-emerald-400 font-semibold text-[11px] bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
+                    <span>💬 WhatsApp</span>
+                </a>
                 <span class="text-slate-400 text-[11px] hidden sm:inline">GSTIN: <strong class="text-slate-200 font-mono">10CJJPD5303B1Z7</strong></span>
                 <span class="text-slate-700 hidden sm:inline">|</span>
-                <div class="flex items-center gap-1.5">
+                <div class="hidden sm:flex items-center gap-1.5">
                     <a href="https://www.facebook.com/share/17rzyPre8P/" target="_blank" rel="noopener" class="w-6 h-6 rounded bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors text-white" title="Facebook">
                         <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.7 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
                     </a>
@@ -65,12 +69,12 @@
     </div>
 
     <!-- Main Navigation Bar -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/90 transition-all duration-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20 gap-4">
-                <!-- Brand Official Logo (Clean & Authentic) -->
-                <a href="{{ route('home') }}" class="shrink-0 flex items-center group py-2" title="Bharat Agro Industries &amp; Machinery">
-                    <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-10 sm:h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]">
+    <header class="sticky top-0 z-40 bg-white/98 backdrop-blur-md shadow-xs border-b border-slate-200/90 transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
+                <!-- Brand Official Logo (Properly Scaled for Mobile & Desktop) -->
+                <a href="{{ route('home') }}" class="shrink-0 flex items-center group py-1.5" title="Bharat Agro Industries &amp; Machinery">
+                    <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-none object-contain transition-transform group-hover:scale-[1.02]">
                 </a>
 
                 <!-- Desktop Navigation Menu -->
@@ -293,8 +297,15 @@
                         <span>+91 7061973186</span>
                     </a>
 
-                    <!-- Primary Get Quotation CTA Button -->
-                    <button type="button" class="open-quote-modal relative overflow-hidden inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
+                    <!-- Mobile Call Quick Action (Visible only on < sm) -->
+                    <a href="tel:+917061973186" class="sm:hidden p-2 text-blue-900 bg-blue-50/80 hover:bg-blue-100 rounded-xl border border-blue-200/80 transition-colors" title="Call Sales Directly">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Primary Get Quotation CTA Button (Hidden on < sm to keep mobile header clean) -->
+                    <button type="button" class="open-quote-modal hidden sm:inline-flex relative overflow-hidden items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
                         <span class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 animate-shimmer pointer-events-none"></span>
                         <svg class="w-4 h-4 text-slate-950 group-hover:rotate-12 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -303,7 +314,7 @@
                     </button>
 
                     <!-- Mobile Menu Hamburger Button -->
-                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-slate-700 hover:text-blue-900 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200" aria-label="Toggle Navigation">
+                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 text-slate-800 hover:text-blue-900 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 active:scale-95" aria-label="Toggle Navigation" aria-expanded="false">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
                         </svg>
@@ -315,82 +326,113 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu Drawer -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white shadow-2xl px-4 pt-3 pb-6 space-y-2 max-h-[85vh] overflow-y-auto">
-            <!-- Mobile Quick Actions: Call & WhatsApp -->
+        <!-- Mobile Navigation Menu Backdrop -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 top-16 sm:top-20 bg-slate-950/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300 opacity-0 lg:hidden"></div>
+
+        <!-- Mobile Navigation Menu Drawer (Slide-Down Overlay) -->
+        <div id="mobile-menu" class="fixed top-16 sm:top-20 left-0 right-0 w-full max-h-[calc(100dvh-4rem)] sm:max-h-[calc(100dvh-5rem)] overflow-y-auto bg-white border-b border-slate-200 shadow-2xl z-50 transform -translate-y-4 opacity-0 pointer-events-none transition-all duration-300 ease-out lg:hidden px-4 pt-3 pb-8 space-y-2">
+            <!-- Mobile Quick Actions: Direct Call & WhatsApp -->
             <div class="grid grid-cols-2 gap-2 pt-1 pb-3 border-b border-slate-100">
-                <a href="tel:+917061973186" class="flex items-center justify-center gap-1.5 bg-blue-900 hover:bg-blue-800 text-white font-semibold py-2 px-3 rounded-lg text-xs transition-colors shadow-xs">
+                <a href="tel:+917061973186" class="flex items-center justify-center gap-1.5 bg-blue-900 hover:bg-blue-800 active:scale-95 text-white font-semibold py-2.5 px-3 rounded-xl text-xs transition-all shadow-xs">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     <span>Call Sales</span>
                 </a>
-                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-3 rounded-lg text-xs transition-colors shadow-xs">
+                <a href="https://wa.me/917858945066?text=Hello%20Bharat%20Agro%2C%20I%20am%20interested%20in%20machinery%20quotation." target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-semibold py-2.5 px-3 rounded-xl text-xs transition-all shadow-xs">
                     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
                     <span>WhatsApp</span>
                 </a>
             </div>
 
-            <a href="{{ route('home') }}" class="block px-3 py-2.5 rounded-lg text-sm font-semibold {{ request()->routeIs('home') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
-                Home
+            <!-- Mobile Nav Items -->
+            <a href="{{ route('home') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold {{ request()->routeIs('home') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
+                <span>Home</span>
+                <span class="text-xs text-blue-900 font-bold">›</span>
             </a>
 
-            <!-- Mobile Catalog Accordion -->
+            <!-- Mobile Machinery Catalog Accordion -->
             <div class="border-y border-slate-100 py-1">
-                <button type="button" id="mobile-catalog-btn" class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-50">
+                <button type="button" id="mobile-catalog-btn" class="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
                     <span class="flex items-center gap-2">
                         <span>Machinery Catalog</span>
-                        <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-1.5 py-0.5 rounded">27+ Models</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full">27+ Models</span>
                     </span>
                     <svg id="mobile-catalog-arrow" class="w-4 h-4 text-slate-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </button>
-                <div id="mobile-catalog-submenu" class="hidden pl-4 pr-2 py-2 space-y-1 text-xs text-slate-600 bg-slate-50/60 rounded-lg mt-1">
-                    <a href="{{ route('products') }}" class="block py-1.5 font-bold text-blue-900">All 27+ Machines &rarr;</a>
-                    <a href="{{ route('products', ['category' => 'food-processing']) }}" class="block py-1 text-slate-700 hover:text-blue-900">🌾 Food Processing &amp; Flour Mills</a>
-                    <a href="{{ route('products', ['category' => 'small-industry']) }}" class="block py-1 text-slate-700 hover:text-blue-900">⚙️ Small Scale Manufacturing</a>
-                    <a href="{{ route('products', ['category' => 'packaging']) }}" class="block py-1 text-slate-700 hover:text-blue-900">📦 Packaging &amp; Disposables</a>
-                    <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="block py-1 text-slate-700 hover:text-blue-900">🐄 Feed &amp; Industrial Units</a>
-                    <a href="{{ route('products', ['category' => 'water-beverage']) }}" class="block py-1 text-slate-700 hover:text-blue-900">💧 Water &amp; Beverage Machines</a>
+                <div id="mobile-catalog-submenu" class="hidden pl-3 pr-2 py-2 space-y-1 text-xs text-slate-600 bg-slate-50/70 rounded-xl mt-1 border border-slate-100">
+                    <a href="{{ route('products') }}" class="mobile-nav-link block p-2 rounded-lg font-bold text-blue-900 bg-blue-50/60">
+                        View All 27+ Machines &rarr;
+                    </a>
+                    <a href="{{ route('products', ['category' => 'food-processing']) }}" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        🌾 Food Processing &amp; Flour Mills
+                    </a>
+                    <a href="{{ route('products', ['category' => 'small-industry']) }}" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        ⚙️ Small Scale Manufacturing (Agarbatti, Paper Cup)
+                    </a>
+                    <a href="{{ route('products', ['category' => 'packaging']) }}" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        📦 Packaging &amp; Disposables
+                    </a>
+                    <a href="{{ route('products', ['category' => 'hardware-industrial']) }}" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        🐄 Cattle Feed &amp; Industrial Units
+                    </a>
+                    <a href="{{ route('products', ['category' => 'water-beverage']) }}" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        💧 Water &amp; Beverage Machines
+                    </a>
                 </div>
             </div>
 
             <!-- Mobile Schemes Accordion -->
             <div class="border-b border-slate-100 pb-1">
-                <button type="button" id="mobile-schemes-btn" class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-50">
+                <button type="button" id="mobile-schemes-btn" class="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
                     <span class="flex items-center gap-2">
                         <span>Government Schemes</span>
-                        <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Up to 50%</span>
+                        <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Up to 50%</span>
                     </span>
                     <svg id="mobile-schemes-arrow" class="w-4 h-4 text-slate-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </button>
-                <div id="mobile-schemes-submenu" class="hidden pl-4 pr-2 py-2 space-y-1 text-xs text-slate-600 bg-slate-50/60 rounded-lg mt-1">
-                    <a href="{{ route('schemes') }}" class="block py-1.5 font-bold text-blue-900">All Schemes &amp; Subsidies &rarr;</a>
-                    <a href="{{ route('schemes') }}#udyami" class="block py-1 text-slate-700 hover:text-blue-900">🏛️ Mukhyamantri Udyami Yojana (₹10 Lakh)</a>
-                    <a href="{{ route('schemes') }}#laghu-udyami" class="block py-1 text-slate-700 hover:text-blue-900">⭐ Laghu Udyami Yojana (₹2 Lakh Free)</a>
-                    <a href="{{ route('schemes') }}#pmegp" class="block py-1 text-slate-700 hover:text-blue-900">💼 PMEGP Scheme (15% - 35% Subsidy)</a>
-                    <a href="{{ route('schemes') }}#pmfme" class="block py-1 text-slate-700 hover:text-blue-900">🍲 PMFME Food Processing Scheme</a>
+                <div id="mobile-schemes-submenu" class="hidden pl-3 pr-2 py-2 space-y-1 text-xs text-slate-600 bg-slate-50/70 rounded-xl mt-1 border border-slate-100">
+                    <a href="{{ route('schemes') }}" class="mobile-nav-link block p-2 rounded-lg font-bold text-blue-900 bg-blue-50/60">
+                        All Schemes &amp; Subsidies Guide &rarr;
+                    </a>
+                    <a href="{{ route('schemes') }}#udyami" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        🏛️ Mukhyamantri Udyami Yojana (₹10 Lakh - 50% Subsidy)
+                    </a>
+                    <a href="{{ route('schemes') }}#laghu-udyami" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        ⭐ Laghu Udyami Yojana (₹2 Lakh 100% Free Grant)
+                    </a>
+                    <a href="{{ route('schemes') }}#pmegp" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        💼 PMEGP Scheme (15% - 35% Capital Subsidy)
+                    </a>
+                    <a href="{{ route('schemes') }}#pmfme" class="mobile-nav-link block p-2 rounded-lg text-slate-700 hover:text-blue-900 hover:bg-white transition-colors">
+                        🍲 PMFME Food Processing Scheme
+                    </a>
                 </div>
             </div>
 
-            <a href="{{ route('services') }}" class="block px-3 py-2.5 rounded-lg text-sm font-semibold {{ request()->routeIs('services') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
-                Services &amp; Warranty
+            <a href="{{ route('services') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold {{ request()->routeIs('services') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
+                <span>Services &amp; Warranty</span>
+                <span class="text-xs text-slate-400">›</span>
             </a>
-            <a href="{{ route('about') }}" class="block px-3 py-2.5 rounded-lg text-sm font-semibold {{ request()->routeIs('about') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
-                About Us
+            <a href="{{ route('about') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold {{ request()->routeIs('about') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
+                <span>About Us</span>
+                <span class="text-xs text-slate-400">›</span>
             </a>
-            <a href="{{ route('contact') }}" class="block px-3 py-2.5 rounded-lg text-sm font-semibold {{ request()->routeIs('contact') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
-                Contact
+            <a href="{{ route('contact') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold {{ request()->routeIs('contact') ? 'bg-blue-50 text-blue-900 font-bold' : 'text-slate-800 hover:bg-slate-50' }}">
+                <span>Contact Showroom</span>
+                <span class="text-xs text-slate-400">›</span>
             </a>
 
-            <!-- Mobile CTA Button -->
-            <div class="pt-3 border-t border-slate-200">
-                <button type="button" class="open-quote-modal w-full flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-3.5 rounded-xl text-sm shadow-md transition-all">
+            <!-- Mobile Quotation CTA Button -->
+            <div class="pt-3 border-t border-slate-200 space-y-2">
+                <button type="button" class="open-quote-modal w-full flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 active:scale-98 text-slate-950 font-bold py-3.5 rounded-xl text-sm shadow-md transition-all">
                     <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                     <span>Get Instant Quotation</span>
                 </button>
-                <div class="mt-3 text-center text-[11px] text-slate-500">
-                    <span>Showroom: Mithapur, Patna • GSTIN: 10CJJPD5303B1Z7</span>
+                <div class="text-center text-[11px] text-slate-500 py-1">
+                    <span>Patna Showroom: Opp. Aryabhata University, Mithapur • GST: 10CJJPD5303B1Z7</span>
                 </div>
             </div>
         </div>
+    </header>
     </header>
 
     <!-- Success Flash Notification -->
@@ -578,15 +620,15 @@
     </div>
 
     <!-- Floating WhatsApp and Quick Call Actions -->
-    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-30 flex flex-col gap-2.5 sm:gap-3">
         <!-- Call Button -->
-        <a href="tel:+917061973186" class="w-13 h-13 rounded-full bg-blue-700 hover:bg-blue-800 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 group border-2 border-white" title="Direct Call: 7061973186">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <a href="tel:+917061973186" class="w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-blue-700 hover:bg-blue-800 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 border-2 border-white" title="Direct Call: 7061973186">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
         </a>
 
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/917061973186?text=Hello%20Bharat%20Agro,%20I%20would%20like%20to%20get%20machinery%20quotations%20and%20scheme%20details." target="_blank" rel="noopener" class="w-13 h-13 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 group border-2 border-white" title="Chat on WhatsApp">
-            <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <a href="https://wa.me/917061973186?text=Hello%20Bharat%20Agro,%20I%20would%20like%20to%20get%20machinery%20quotations%20and%20scheme%20details." target="_blank" rel="noopener" class="w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 border-2 border-white" title="Chat on WhatsApp">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         </a>
     </div>
 

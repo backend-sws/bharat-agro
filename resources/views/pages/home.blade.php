@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- 1. Hero Banner Slider Section -->
-<section class="relative bg-slate-950 overflow-hidden text-white min-h-[460px] sm:min-h-[560px] lg:min-h-[640px] flex items-center">
+<section class="relative bg-slate-950 overflow-hidden text-white min-h-[500px] sm:min-h-[560px] lg:min-h-[640px] flex items-center">
     <!-- Slides Container -->
     <div id="hero-slider" class="absolute inset-0 w-full h-full">
         <!-- Slide 1: Mukhyamantri Udyog -->
@@ -13,22 +13,22 @@
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/slider-mukhyamantri.jpg') }}');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-                <div class="max-w-2xl py-16 space-y-6">
-                    <div class="slide-animate inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/40 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                <div class="max-w-2xl py-10 sm:py-16 space-y-4 sm:space-y-6">
+                    <div class="slide-animate inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/40 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold tracking-wide uppercase">
                         <span>🇮🇳 Preferred Partner for Entrepreneurs in Bihar &amp; Jharkhand</span>
                     </div>
-                    <h1 class="slide-animate text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
+                    <h1 class="slide-animate text-2xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
                         All Commercial Machinery Available Under <span class="text-amber-400">Government Schemes</span>
                     </h1>
-                    <p class="slide-animate text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    <p class="slide-animate text-slate-300 text-xs sm:text-base leading-relaxed font-light">
                         Certified commercial and agro machinery for Mukhyamantri Udyami Yojana, Laghu Udyami Yojana (₹2 Lakh Free Grant), PMEGP, and PMFME schemes.
                     </p>
-                    <div class="slide-animate flex flex-wrap items-center gap-4 pt-2">
-                        <button type="button" class="open-quote-modal px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition-transform hover:scale-105">
+                    <div class="slide-animate flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full">
+                        <button type="button" class="open-quote-modal w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition-transform hover:scale-105 active:scale-95">
                             Get Instant Quotation
                         </button>
-                        <a href="tel:+917061973186" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition flex items-center gap-2">
-                            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <a href="tel:+917061973186" class="w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition flex items-center gap-2">
+                            <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             <span>Call: +91 7061973186</span>
                         </a>
                     </div>
@@ -41,21 +41,21 @@
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/slider-prime-minister.jpg') }}');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-950/80 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-                <div class="max-w-2xl py-16 space-y-6">
-                    <div class="slide-animate inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 border border-blue-400/40 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                <div class="max-w-2xl py-10 sm:py-16 space-y-4 sm:space-y-6">
+                    <div class="slide-animate inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 border border-blue-400/40 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold tracking-wide uppercase">
                         <span>🚀 Self-Reliant India Initiative</span>
                     </div>
-                    <h2 class="slide-animate text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
+                    <h2 class="slide-animate text-2xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
                         Become a Successful Entrepreneur - <span class="text-amber-400">Avail Government Subsidies</span>
                     </h2>
-                    <p class="slide-animate text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    <p class="slide-animate text-slate-300 text-xs sm:text-base leading-relaxed font-light">
                         Avail 35% to 50% capital subsidies on Flour Mills, Pulse Mills, Spice Pulverizers, Agarbatti, Camphor, and Packaging Equipment.
                     </p>
-                    <div class="slide-animate flex flex-wrap items-center gap-4 pt-2">
-                        <a href="{{ route('schemes') }}" class="px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition-transform hover:scale-105">
+                    <div class="slide-animate flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full">
+                        <a href="{{ route('schemes') }}" class="w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition-transform hover:scale-105 active:scale-95">
                             Check Scheme Eligibility
                         </a>
-                        <a href="{{ route('products') }}" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition">
+                        <a href="{{ route('products') }}" class="w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition">
                             Browse All Machines
                         </a>
                     </div>
@@ -68,21 +68,21 @@
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/slider-bharat-agro.jpg') }}');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-                <div class="max-w-2xl py-16 space-y-6">
-                    <div class="slide-animate inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                <div class="max-w-2xl py-10 sm:py-16 space-y-4 sm:space-y-6">
+                    <div class="slide-animate inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold tracking-wide uppercase">
                         <span>Special Focus on Women &amp; Youth</span>
                     </div>
-                    <h2 class="slide-animate text-3xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
+                    <h2 class="slide-animate text-2xl sm:text-4xl lg:text-5xl font-extrabold font-['Outfit',sans-serif] leading-tight text-white">
                         Golden Opportunities for <span class="text-amber-400">Self-Employment</span>
                     </h2>
-                    <p class="slide-animate text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    <p class="slide-animate text-slate-300 text-xs sm:text-base leading-relaxed font-light">
                         Start your own small-scale enterprise with minimal capital investment. Complete technical training, machinery guidance, and bank loan documentation provided by our Patna team.
                     </p>
-                    <div class="slide-animate flex flex-wrap items-center gap-4 pt-2">
-                        <button type="button" class="open-quote-modal px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition">
+                    <div class="slide-animate flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full">
+                        <button type="button" class="open-quote-modal w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm shadow-lg transition active:scale-95">
                             Free Consultation
                         </button>
-                        <a href="{{ route('contact') }}" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition">
+                        <a href="{{ route('contact') }}" class="w-full sm:w-auto text-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-sm border border-white/20 backdrop-blur-sm transition">
                             Visit Patna Showroom
                         </a>
                     </div>
@@ -92,45 +92,45 @@
     </div>
 
     <!-- Slider Navigation Buttons -->
-    <div class="absolute bottom-6 right-6 sm:right-12 z-20 flex items-center gap-3">
-        <button id="hero-prev" class="w-10 h-10 rounded-full bg-black/40 hover:bg-amber-500 text-white hover:text-black border border-white/20 flex items-center justify-center transition" aria-label="Previous Slide">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    <div class="absolute bottom-5 right-4 sm:right-12 z-20 flex items-center gap-2 sm:gap-3">
+        <button id="hero-prev" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 hover:bg-amber-500 text-white hover:text-black border border-white/20 flex items-center justify-center transition active:scale-95" aria-label="Previous Slide">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
         </button>
-        <button id="hero-next" class="w-10 h-10 rounded-full bg-black/40 hover:bg-amber-500 text-white hover:text-black border border-white/20 flex items-center justify-center transition" aria-label="Next Slide">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <button id="hero-next" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 hover:bg-amber-500 text-white hover:text-black border border-white/20 flex items-center justify-center transition active:scale-95" aria-label="Next Slide">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </button>
     </div>
 
     <!-- Slider Dots -->
-    <div class="absolute bottom-6 left-6 sm:left-12 z-20 flex items-center gap-2">
-        <button class="hero-dot w-8 h-2.5 rounded-full bg-amber-400 transition-all duration-300" aria-label="Slide 1"></button>
-        <button class="hero-dot w-3 h-2.5 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 2"></button>
-        <button class="hero-dot w-3 h-2.5 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 3"></button>
+    <div class="absolute bottom-5 left-4 sm:left-12 z-20 flex items-center gap-2">
+        <button class="hero-dot w-8 h-2 sm:h-2.5 rounded-full bg-amber-400 transition-all duration-300" aria-label="Slide 1"></button>
+        <button class="hero-dot w-2.5 sm:w-3 h-2 sm:h-2.5 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 2"></button>
+        <button class="hero-dot w-2.5 sm:w-3 h-2 sm:h-2.5 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 3"></button>
     </div>
 </section>
 
 <!-- 2. Prime Government Schemes Banner Strip -->
-<section class="bg-gradient-to-r from-blue-900 via-blue-950 to-slate-950 text-white py-8 border-y-4 border-amber-500 relative">
+<section class="bg-gradient-to-r from-blue-900 via-blue-950 to-slate-950 text-white py-6 sm:py-8 border-y-4 border-amber-500 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-4">
-                <div class="w-14 h-14 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-lg font-bold text-2xl">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-5 sm:gap-6">
+            <div class="flex items-center gap-3.5 sm:gap-4 w-full lg:w-auto">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-lg font-bold text-xl sm:text-2xl">
                     📜
                 </div>
                 <div>
-                    <h2 class="text-base sm:text-lg font-bold text-amber-400 font-['Outfit',sans-serif]">
+                    <h2 class="text-sm sm:text-lg font-bold text-amber-400 font-['Outfit',sans-serif] leading-snug">
                         Certified Machinery Supplier Under State &amp; Central Government Schemes
                     </h2>
-                    <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">
                         All essential machines are available under Mukhyamantri Udyami Yojana, Mukhyamantri Laghu Udyami Yojana, PMEGP, and PMFME.
                     </p>
                 </div>
             </div>
-            <div class="flex items-center gap-3 shrink-0">
-                <button type="button" class="open-quote-modal px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs sm:text-sm shadow transition">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 w-full lg:w-auto shrink-0">
+                <button type="button" class="open-quote-modal w-full sm:w-auto text-center justify-center px-5 py-2.5 bg-amber-500 hover:bg-amber-600 active:scale-95 text-slate-950 font-bold rounded-xl text-xs sm:text-sm shadow transition">
                     Get Official Quotation
                 </button>
-                <a href="{{ route('schemes') }}" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg text-xs sm:text-sm border border-white/20 transition">
+                <a href="{{ route('schemes') }}" class="w-full sm:w-auto text-center justify-center px-5 py-2.5 bg-white/10 hover:bg-white/20 active:scale-95 text-white font-medium rounded-xl text-xs sm:text-sm border border-white/20 transition">
                     Explore Schemes →
                 </a>
             </div>
@@ -139,59 +139,59 @@
 </section>
 
 <!-- 3. Dynamic Stats Counter Section (GSAP ScrollTrigger) -->
-<section class="py-12 bg-white border-b border-slate-200">
+<section class="py-10 sm:py-12 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
-                <div class="text-3xl sm:text-4xl font-extrabold text-blue-900 font-['Outfit',sans-serif] stat-counter" data-target="500" data-suffix="+">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 text-center">
+            <div class="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                <div class="text-2xl sm:text-4xl font-extrabold text-blue-900 font-['Outfit',sans-serif] stat-counter" data-target="500" data-suffix="+">
                     0
                 </div>
                 <div class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">
                     Units Installed
                 </div>
-                <div class="text-[11px] text-slate-500">Commercial &amp; Agro Setups</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-500">Commercial &amp; Agro Setups</div>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
-                <div class="text-3xl sm:text-4xl font-extrabold text-amber-600 font-['Outfit',sans-serif] stat-counter" data-target="100" data-suffix="%">
+            <div class="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                <div class="text-2xl sm:text-4xl font-extrabold text-amber-600 font-['Outfit',sans-serif] stat-counter" data-target="100" data-suffix="%">
                     0
                 </div>
                 <div class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">
                     Scheme Compliant
                 </div>
-                <div class="text-[11px] text-slate-500">Govt Approved Machinery</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-500">Govt Approved Machinery</div>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
-                <div class="text-3xl sm:text-4xl font-extrabold text-blue-900 font-['Outfit',sans-serif] stat-counter" data-target="28" data-suffix="+">
+            <div class="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                <div class="text-2xl sm:text-4xl font-extrabold text-blue-900 font-['Outfit',sans-serif] stat-counter" data-target="28" data-suffix="+">
                     0
                 </div>
                 <div class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">
                     Districts Covered
                 </div>
-                <div class="text-[11px] text-slate-500">Bihar &amp; Jharkhand Network</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-500">Bihar &amp; Jharkhand Network</div>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
-                <div class="text-3xl sm:text-4xl font-extrabold text-emerald-600 font-['Outfit',sans-serif] stat-counter" data-target="99" data-suffix="%">
+            <div class="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                <div class="text-2xl sm:text-4xl font-extrabold text-emerald-600 font-['Outfit',sans-serif] stat-counter" data-target="99" data-suffix="%">
                     0
                 </div>
                 <div class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">
                     Satisfied Clients
                 </div>
-                <div class="text-[11px] text-slate-500">Positive Feedback &amp; Trust</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-500">Positive Feedback &amp; Trust</div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- 4. About Company Section -->
-<section class="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
+<section class="py-12 sm:py-20 bg-slate-50 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <!-- Left Image Collage -->
             <div class="lg:col-span-5 relative gsap-fade-up">
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                     <img src="{{ asset('images/about-bharat-agro.jpg') }}" alt="Bharat Agro Industry Patna Office" class="w-full h-auto object-cover">
                 </div>
                 <!-- Floating Stock Image Badge -->
@@ -202,37 +202,37 @@
                     </div>
                 </div>
                 <!-- Experience badge -->
-                <div class="absolute -top-4 -left-4 bg-blue-900 text-white p-3.5 rounded-2xl shadow-lg border-2 border-amber-400 text-center">
-                    <span class="block text-xl font-bold font-['Outfit']">PATNA</span>
-                    <span class="block text-[10px] uppercase tracking-wider text-amber-300">Head Office &amp; Showroom</span>
+                <div class="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 bg-blue-900 text-white p-2.5 sm:p-3.5 rounded-2xl shadow-lg border-2 border-amber-400 text-center">
+                    <span class="block text-base sm:text-xl font-bold font-['Outfit']">PATNA</span>
+                    <span class="block text-[9px] sm:text-[10px] uppercase tracking-wider text-amber-300">Showroom &amp; Depot</span>
                 </div>
             </div>
 
             <!-- Right Content Details -->
-            <div class="lg:col-span-7 space-y-6 gsap-fade-up">
+            <div class="lg:col-span-7 space-y-5 sm:space-y-6 gsap-fade-up">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-3 py-1 rounded-md">
                         ABOUT COMPANY
                     </span>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 font-['Outfit',sans-serif] leading-tight">
+                    <h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5 font-['Outfit',sans-serif] leading-tight">
                         Empowering Entrepreneurs with Trusted Agro &amp; Industrial Machinery
                     </h2>
                 </div>
 
-                <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+                <div class="space-y-3.5 text-slate-600 text-xs sm:text-base leading-relaxed">
                     <p>
                         <strong>Bharat Agro Industry &amp; Machinery</strong>, based in Patna, is committed to delivering high-quality machinery solutions to entrepreneurs across Bihar and Jharkhand. We specialize in supplying machines approved and applicable under government subsidy schemes, ensuring reliability, transparency, and long-term value.
                     </p>
                     <p>
                         Our goal is to support self-employment, MSME growth, and industrial development by making modern machinery easily accessible to every aspiring entrepreneur.
                     </p>
-                    <p class="font-semibold text-blue-900 bg-blue-50/80 p-3.5 rounded-xl border-l-4 border-blue-900 text-sm">
+                    <p class="font-semibold text-blue-900 bg-blue-50/80 p-3 sm:p-3.5 rounded-xl border-l-4 border-blue-900 text-xs sm:text-sm">
                         "We believe in empowering self-employment and strengthening local industries by making modern, efficient, and approved machines easily accessible."
                     </p>
                 </div>
 
                 <!-- Feature Points Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1">
                     <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-800 font-medium">
                         <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
                         <span>Approved Quotations &amp; GST Invoices for Schemes</span>
@@ -251,11 +251,11 @@
                     </div>
                 </div>
 
-                <div class="pt-4 flex flex-wrap items-center gap-4">
-                    <a href="{{ route('about') }}" class="px-6 py-3 bg-blue-900 hover:bg-blue-950 text-white font-semibold rounded-xl text-sm shadow transition">
+                <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full">
+                    <a href="{{ route('about') }}" class="w-full sm:w-auto text-center justify-center px-6 py-3 bg-blue-900 hover:bg-blue-950 text-white font-semibold rounded-xl text-xs sm:text-sm shadow transition">
                         Learn More About Us →
                     </a>
-                    <button type="button" class="open-quote-modal px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm shadow transition">
+                    <button type="button" class="open-quote-modal w-full sm:w-auto text-center justify-center px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs sm:text-sm shadow transition">
                         Start Consultation
                     </button>
                 </div>
@@ -334,24 +334,24 @@
             </a>
         </div>
 
-        <!-- Interactive Category Filter Tabs -->
-        <div class="flex flex-wrap items-center gap-2 mb-8">
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-blue-900 text-white border-blue-900 shadow-md" data-category="all">
+        <!-- Interactive Category Filter Tabs (Swipeable on Mobile) -->
+        <div class="flex overflow-x-auto pb-2.5 sm:pb-0 sm:flex-wrap items-center gap-2 mb-8 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-blue-900 text-white border-blue-900 shadow-md" data-category="all">
                 All Machines
             </button>
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="food-processing">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="food-processing">
                 Food Processing &amp; Agro
             </button>
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="small-industry">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="small-industry">
                 Small Scale Manufacturing
             </button>
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="packaging">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="packaging">
                 Packaging &amp; Disposables
             </button>
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="hardware-industrial">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="hardware-industrial">
                 Hardware &amp; Industrial
             </button>
-            <button type="button" class="product-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="water-beverage">
+            <button type="button" class="product-filter-btn shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition bg-white text-slate-700 border-slate-200 hover:border-slate-300" data-category="water-beverage">
                 Water &amp; Beverage
             </button>
         </div>
@@ -563,8 +563,8 @@
         </div>
 
         <!-- News & Media Appreciation Banner -->
-        <div class="mt-12 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-2xl border border-amber-500/30 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-            <div class="flex items-center gap-4">
+        <div class="mt-12 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-2xl border border-amber-500/30 p-5 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6 shadow-xl">
+            <div class="flex items-center gap-3.5 sm:gap-4 w-full md:w-auto">
                 <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30 text-2xl">
                     📰
                 </div>
@@ -575,7 +575,7 @@
                     </p>
                 </div>
             </div>
-            <a href="{{ asset('images/award-news.jpg') }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow transition-colors shrink-0">
+            <a href="{{ asset('images/award-news.jpg') }}" target="_blank" rel="noopener" class="w-full md:w-auto text-center justify-center inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow transition-colors shrink-0">
                 <span>View News Feature</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
@@ -738,8 +738,8 @@
             </div>
 
             <!-- Right Quick Consultation Form -->
-            <div class="lg:col-span-7 bg-white text-slate-900 rounded-3xl p-8 sm:p-10 shadow-2xl border border-slate-100">
-                <h3 class="text-2xl font-bold font-['Outfit'] text-blue-950 mb-1">
+            <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 shadow-2xl border border-slate-100">
+                <h3 class="text-xl sm:text-2xl font-bold font-['Outfit'] text-blue-950 mb-1">
                     Request Free Consultation &amp; Quotation
                 </h3>
                 <p class="text-xs sm:text-sm text-slate-500 mb-6">
