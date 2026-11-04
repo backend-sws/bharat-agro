@@ -130,24 +130,95 @@
 </section>
 
 <!-- Awards and Recognition Section -->
-<section class="py-16 sm:py-20 bg-white">
+<section class="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-3 py-1 rounded-md">
-                HONOR &amp; ACHIEVEMENTS
+        <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-950/80 border border-amber-500/30 px-3.5 py-1 rounded-full">
+                ⭐ HONOR &amp; ACHIEVEMENTS
             </span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-amber-400 font-['Outfit']">
                 Awards &amp; Recognition
             </h2>
+            <p class="text-xs sm:text-sm text-slate-300">
+                Honored across Bihar for reliability, manufacturing excellence, and grassroots employment generation.
+            </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md p-3 bg-slate-50">
-                <img src="{{ asset('images/award-1.jpg') }}" alt="Award Certificate" class="w-full h-auto rounded-xl object-contain">
+        <!-- 6 Awards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-1.jpg') }}" alt="Bharat Agro Stage Recognition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">State Conclave Keynote</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">Bharat Agro Stage Keynote &amp; Honor</h4>
+                </div>
             </div>
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md p-3 bg-slate-50">
-                <img src="{{ asset('images/award-news.jpg') }}" alt="Newspaper Coverage" class="w-full h-auto rounded-xl object-contain">
+
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-2.jpg') }}" alt="Youth Entrepreneurship Award" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">Excellence Award</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">Youth Enterprise Empowerment Award</h4>
+                </div>
             </div>
+
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-3.jpg') }}" alt="Bihar Industrial Package Delegation 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">BIADA &amp; Startup Bihar</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">Bihar Industrial Package Meet 2025</h4>
+                </div>
+            </div>
+
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-4.jpg') }}" alt="Women Entrepreneurship Honor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">Dignitary Felicitation</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">Excellence in Agro Machinery Supply</h4>
+                </div>
+            </div>
+
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-5.jpg') }}" alt="State MSME Leadership Award Plaque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">Leadership Trophy</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">State MSME Leadership Award Plaque</h4>
+                </div>
+            </div>
+
+            <div class="group bg-slate-950 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl transition-all flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3]">
+                    <img src="{{ asset('images/award-6.jpg') }}" alt="Dignitary Honor &amp; Appreciation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-slate-800">
+                    <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">Statewide Recognition</span>
+                    <h4 class="text-sm font-bold text-white mt-0.5">Dignitary Felicitation &amp; Trust Honor</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Feature Banner -->
+        <div class="mt-10 bg-slate-950 rounded-2xl border border-amber-500/30 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">📰</span>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Featured in Prominent News Media</h4>
+                    <p class="text-xs text-slate-400">Regularly recognized for supporting MSME industrialization across Bihar &amp; Jharkhand.</p>
+                </div>
+            </div>
+            <a href="{{ asset('images/award-news.jpg') }}" target="_blank" rel="noopener" class="text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4 shrink-0">
+                View Newspaper Article &rarr;
+            </a>
         </div>
     </div>
 </section>

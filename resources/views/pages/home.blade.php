@@ -409,36 +409,159 @@
 </section>
 
 <!-- 8. Awards & Achievements Section -->
-<section class="py-16 sm:py-20 bg-slate-950 text-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-950/80 border border-amber-500/30 px-3 py-1 rounded-md">
-                RECOGNITION &amp; HONORS
+<section class="py-16 sm:py-24 bg-slate-950 text-white relative overflow-hidden">
+    <!-- Background Industrial Pattern & Glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-950/80 border border-amber-500/30 px-3.5 py-1 rounded-full shadow-xs">
+                ⭐ Official Honors &amp; Recognitions
             </span>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-['Outfit']">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-amber-400 font-['Outfit'] tracking-tight">
                 Awards &amp; Achievements
             </h2>
-            <p class="text-xs sm:text-sm text-slate-400">
-                Honored for outstanding contributions to industrial entrepreneurship and MSME development in Bihar &amp; Jharkhand
+            <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+                Honored by esteemed government dignitaries, state ministers, and industry summits for outstanding contributions to industrial entrepreneurship and MSME development across Bihar &amp; Jharkhand.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
-            <!-- Award Image 1 -->
-            <div class="rounded-2xl overflow-hidden border-2 border-amber-400/40 shadow-2xl bg-slate-900 p-2">
-                <img src="{{ asset('images/award-1.jpg') }}" alt="Bharat Agro Award Recognition" class="w-full h-auto rounded-xl object-contain max-h-[460px]">
-                <div class="p-3 text-center text-xs text-amber-300 font-semibold">
-                    Excellence Award in Agro &amp; Industrial Machinery Supply
+        <!-- 6 Awards Grid (Matching Authentic Website Layout) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+            <!-- Award 1 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-1.jpg') }}" alt="Bharat Agro Stage Recognition Ceremony" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">State Summit Keynote</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            Bharat Agro Stage Recognition Ceremony
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Felicitation at regional industry summit for promoting modern food processing technology across Bihar.
+                    </p>
                 </div>
             </div>
 
-            <!-- Award Image 2 (News Coverage) -->
-            <div class="rounded-2xl overflow-hidden border-2 border-amber-400/40 shadow-2xl bg-slate-900 p-2">
-                <img src="{{ asset('images/award-news.jpg') }}" alt="News Coverage Bharat Agro Machinery Patna" class="w-full h-auto rounded-xl object-contain max-h-[460px]">
-                <div class="p-3 text-center text-xs text-amber-300 font-semibold">
-                    Media Coverage &amp; Appreciation in Leading Publications
+            <!-- Award 2 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-2.jpg') }}" alt="Youth Entrepreneurship Excellence Award Presentation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Excellence Award</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            Youth Enterprise Empowerment Award
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Presented to Bharat Agro leadership for enabling hundreds of youth to start profitable micro-enterprises.
+                    </p>
                 </div>
             </div>
+
+            <!-- Award 3 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-3.jpg') }}" alt="Bihar Industrial Promotion Package Meet (BIADA & Startup Bihar)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Invest Bihar &amp; BIADA</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            Bihar Industrial Package Delegation 2025
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Active participation and delegation at the Startup Bihar &amp; BIADA industrial investment rollout program.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Award 4 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-4.jpg') }}" alt="Women Entrepreneurship Honor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Dignitary Felicitation</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            Excellence in Agro Machinery Supply
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Honored with auspicious Buddha idol memento by state dignitaries for unwavering manufacturing commitment.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Award 5 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-5.jpg') }}" alt="State MSME Leadership Award Plaque" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Leadership Trophy</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            State MSME Leadership Award Plaque
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Awarded for premier supply chain execution under Mukhyamantri Udyami &amp; Laghu Udyami schemes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Award 6 -->
+            <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-950">
+                    <img src="{{ asset('images/award-6.jpg') }}" alt="Dignitary Honor &amp; Appreciation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                </div>
+                <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between border-t border-slate-800">
+                    <div>
+                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Statewide Recognition</span>
+                        <h4 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-amber-300 transition-colors">
+                            Dignitary Felicitation &amp; Trust Honor
+                        </h4>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Recognized by industry leaders for genuine machinery delivery, prompt warranty service, and on-site support.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- News & Media Appreciation Banner -->
+        <div class="mt-12 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-2xl border border-amber-500/30 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30 text-2xl">
+                    📰
+                </div>
+                <div>
+                    <h4 class="text-base sm:text-lg font-bold text-white">Media Coverage &amp; Press Appreciation</h4>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">
+                        Extensively covered by regional dailies and business media for generating grassroots rural employment across Bihar.
+                    </p>
+                </div>
+            </div>
+            <a href="{{ asset('images/award-news.jpg') }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow transition-colors shrink-0">
+                <span>View News Feature</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
         </div>
     </div>
 </section>
