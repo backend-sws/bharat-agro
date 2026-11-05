@@ -21,7 +21,7 @@
 
     <!-- Single Unified Sleek Top Utility Bar (Mobile-Safe & Fully Responsive) -->
     <div class="bg-slate-900 text-slate-300 py-1.5 px-3 sm:px-4 text-xs border-b border-slate-800 relative z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between gap-2 sm:gap-4">
             <!-- Left: Contact Lines & Status -->
             <div class="flex items-center gap-2.5 sm:gap-5 whitespace-nowrap overflow-hidden">
                 <span class="hidden sm:inline-flex items-center gap-1.5 text-slate-300">
@@ -41,9 +41,10 @@
                 </a>
             </div>
 
-            <!-- Center Notice Badge (Visible on XL+ screens to prevent navbar squeeze) -->
-            <div class="hidden xl:flex items-center gap-2 bg-slate-800/80 px-3 py-0.5 rounded-full border border-slate-700/80 text-[11px] text-amber-300">
-                <span>⭐ Bihar Udyami &amp; PMEGP Subsidy Approved Machines • Instant GST Quotation &amp; DPR</span>
+            <!-- Center Notice Badge (Visible on XL+ screens with smart responsive length) -->
+            <div class="hidden xl:flex items-center gap-2 bg-slate-800/80 px-3 py-0.5 rounded-full border border-slate-700/80 text-[11px] text-amber-300 whitespace-nowrap">
+                <span class="hidden 2xl:inline">⭐ Bihar Udyami &amp; PMEGP Subsidy Approved Machines • Instant GST Quotation &amp; DPR</span>
+                <span class="inline 2xl:hidden">⭐ Bihar Udyami &amp; PMEGP Approved Machines</span>
             </div>
 
             <!-- Right: GSTIN & Socials -->
@@ -70,23 +71,23 @@
 
     <!-- Main Navigation Bar -->
     <header class="sticky top-0 z-40 bg-white/98 backdrop-blur-md shadow-xs border-b border-slate-200/90 transition-all duration-200">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
+        <div class="max-w-[1400px] mx-auto px-3 sm:px-4 xl:px-6 2xl:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-3 xl:gap-4">
                 <!-- Brand Official Logo (Properly Scaled for Mobile & Desktop) -->
                 <a href="{{ route('home') }}" class="shrink-0 flex items-center group py-1.5" title="Bharat Agro Industries &amp; Machinery">
-                    <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-none object-contain transition-transform group-hover:scale-[1.02]">
+                    <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-9 sm:h-10 xl:h-10 2xl:h-11 w-auto max-w-[170px] sm:max-w-[210px] xl:max-w-[220px] 2xl:max-w-none object-contain transition-transform group-hover:scale-[1.02]">
                 </a>
 
                 <!-- Desktop Navigation Menu (Crisp & Perfectly Spaced for XL+ Screens) -->
-                <nav class="hidden xl:flex items-center gap-1 2xl:gap-2 font-medium text-slate-700 text-[13px] 2xl:text-[14px] whitespace-nowrap">
+                <nav class="hidden xl:flex items-center gap-0.5 xl:gap-1 2xl:gap-2 font-medium text-slate-700 text-[12.5px] 2xl:text-[14px] whitespace-nowrap">
                     <!-- Home -->
-                    <a href="{{ route('home') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('home') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('home') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Home
                     </a>
 
                     <!-- Products Catalog with Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('products') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                        <a href="{{ route('products') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('products*') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                             <span>Products</span>
                             <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded-full">27+</span>
                             <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,9 +207,9 @@
 
                     <!-- Government Schemes Dropdown -->
                     <div class="relative group">
-                        <a href="{{ route('schemes') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                        <a href="{{ route('schemes') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full flex items-center gap-1.5 transition-all whitespace-nowrap {{ request()->routeIs('schemes') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                             <span>Govt Schemes</span>
-                            <span class="text-[9px] font-extrabold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-full uppercase tracking-wider">Subsidy</span>
+                            <span class="hidden 2xl:inline text-[9px] font-extrabold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-full uppercase tracking-wider">Subsidy</span>
                             <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-900 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
@@ -270,23 +271,24 @@
                     </div>
 
                     <!-- Services -->
-                    <a href="{{ route('services') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
-                        Services &amp; Warranty
+                    <a href="{{ route('services') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('services') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                        <span class="xl:hidden 2xl:inline">Services &amp; Warranty</span>
+                        <span class="hidden xl:inline 2xl:hidden">Services</span>
                     </a>
 
                     <!-- About Us -->
-                    <a href="{{ route('about') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('about') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('about') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         About Us
                     </a>
 
                     <!-- Contact -->
-                    <a href="{{ route('contact') }}" class="px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
+                    <a href="{{ route('contact') }}" class="px-2 xl:px-2.5 2xl:px-3.5 py-2 rounded-full transition-all whitespace-nowrap {{ request()->routeIs('contact') ? 'text-blue-900 font-bold bg-blue-50/80' : 'hover:text-blue-900 hover:bg-slate-100/70' }}">
                         Contact
                     </a>
                 </nav>
 
                 <!-- CTA Actions -->
-                <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+                <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0">
                     <!-- Mobile Call Quick Action (Visible only on < sm) -->
                     <a href="tel:+917061973186" class="sm:hidden p-2 text-blue-900 bg-blue-50/80 hover:bg-blue-100 rounded-xl border border-blue-200/80 transition-colors" title="Call Sales Directly">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -302,7 +304,7 @@
                     </a>
 
                     <!-- Primary Get Quotation CTA Button -->
-                    <button type="button" class="open-quote-modal hidden sm:inline-flex relative overflow-hidden items-center gap-1.5 sm:gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group">
+                    <button type="button" class="open-quote-modal hidden sm:inline-flex relative overflow-hidden items-center gap-1.5 sm:gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-3 sm:px-3.5 xl:px-4 2xl:px-5 py-2 sm:py-2.5 rounded-full shadow-sm hover:shadow-md transition-all text-xs 2xl:text-sm active:scale-95 whitespace-nowrap group">
                         <span class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 animate-shimmer pointer-events-none"></span>
                         <svg class="w-4 h-4 text-slate-950 group-hover:rotate-12 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -311,8 +313,8 @@
                     </button>
 
                     <!-- Staff Login Button (Beside Get Quotation) -->
-                    <a href="https://attendancebharatagro.startupwebsupport.com/login" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1.5 bg-slate-900 hover:bg-blue-900 text-white font-semibold px-3 sm:px-3.5 py-2 sm:py-2.5 rounded-full shadow-xs hover:shadow transition-all text-xs sm:text-sm active:scale-95 whitespace-nowrap group" title="Employee &amp; Staff Login">
-                        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <a href="https://attendancebharatagro.startupwebsupport.com/login" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1.5 bg-slate-900 hover:bg-blue-900 text-white font-semibold px-2.5 sm:px-3 xl:px-3.5 2xl:px-4 py-2 sm:py-2.5 rounded-full shadow-xs hover:shadow transition-all text-xs 2xl:text-sm active:scale-95 whitespace-nowrap group" title="Employee &amp; Staff Login">
+                        <svg class="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                         </svg>
                         <span>Login</span>
