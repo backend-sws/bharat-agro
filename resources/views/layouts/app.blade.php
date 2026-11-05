@@ -423,7 +423,6 @@
             </div>
         </div>
     </header>
-    </header>
 
     <!-- Success Flash Notification -->
     @if(session('success'))
@@ -453,13 +452,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
                 <!-- Col 1: About Bharat Agro -->
                 <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Logo" class="h-12 w-auto bg-white p-1 rounded">
-                        <div>
-                            <span class="block text-lg font-bold text-white tracking-tight">BHARAT AGRO</span>
-                            <span class="block text-xs text-amber-400 font-medium">Industry &amp; Machinery</span>
-                        </div>
-                    </div>
+                    <a href="{{ route('home') }}" class="inline-block group" title="Bharat Agro Industries &amp; Machinery">
+                        <img src="{{ asset('images/logo.png') }}" alt="Bharat Agro Industries &amp; Machinery" class="h-11 sm:h-12 w-auto max-w-[240px] bg-white p-1.5 rounded-lg object-contain transition-transform group-hover:scale-[1.02]">
+                    </a>
                     <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
                         Bharat Agro Industry &amp; Machinery is a trusted exporter and supplier of agro &amp; industrial machines, dedicated to supporting entrepreneurs, startups, and small business owners under various Government of India and State Government schemes.
                     </p>
@@ -528,7 +523,7 @@
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            <span>Landline: 0612 3171580</span>
+                            <span>Landline: <a href="tel:06123171580" class="hover:text-amber-400 text-slate-200">0612 3171580</a></span>
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
